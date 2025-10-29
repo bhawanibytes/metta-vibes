@@ -1,0 +1,117 @@
+import Link from "next/link";
+import { Phone, Mail, MapPin } from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-card border-border mt-20 border-t">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          {/* Brand */}
+          <div>
+            <h3 className="from-primary to-primary-light mb-4 bg-linear-to-r bg-clip-text text-xl font-bold text-transparent">
+              Metta Vibes
+            </h3>
+            <p className="text-muted-foreground mb-4 text-sm">
+              Behavioral Health and Wellness
+            </p>
+            <p className="text-muted-foreground text-sm">
+              Intensive Outpatient Programs for Women & Children Healing from
+              Trauma
+            </p>
+          </div>
+
+          {/* Programs */}
+          <div>
+            <h4 className="mb-4 font-semibold">Programs</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link
+                  href="/kindred-path"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  The Kindred Path
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/metta-cove"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  The Metta Cove
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/grief"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  What the GRIEF?!
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/metta-works"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Metta Works!
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/family-playbook"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Family Playbook
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Insurance */}
+          <div>
+            <h4 className="mb-4 font-semibold">Insurance Accepted</h4>
+            <ul className="text-muted-foreground space-y-2 text-sm">
+              <li>Medicaid</li>
+              <li>Blue Cross Blue Shield</li>
+              <li>Aetna</li>
+              <li>AIHP</li>
+              <li>Cigna</li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="mb-4 font-semibold">Contact Us</h4>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start space-x-2">
+                <Phone className="text-primary mt-0.5 h-4 w-4 shrink-0" />
+                <span className="text-muted-foreground">
+                  (Your Phone Number)
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <Mail className="text-primary mt-0.5 h-4 w-4 shrink-0" />
+                <span className="text-muted-foreground">
+                  contact@mettavibes.com
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <MapPin className="text-primary mt-0.5 h-4 w-4 shrink-0" />
+                <span className="text-muted-foreground">Arizona</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-border text-muted-foreground mt-8 border-t pt-8 text-center text-sm">
+          <p>
+            © {new Date().getFullYear()} Metta Vibes Behavioral Health and
+            Wellness. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
