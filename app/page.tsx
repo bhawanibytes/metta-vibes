@@ -3,16 +3,18 @@ import Footer from "@components/Footer";
 import ProgramCard from "@components/ProgramCard";
 import { Button } from "@components/ui/button";
 import { Card, CardContent } from "@components/ui/card";
+import Link from "next/link";
 import {
   Heart,
   Users,
-  Sparkles,
   Briefcase,
   BookOpen,
   Phone,
   CheckCircle,
   Shield,
 } from "lucide-react";
+import { phoneNumber } from "./constants";
+import Image from "next/image";
 
 const Index = () => {
   return (
@@ -44,7 +46,7 @@ const Index = () => {
               {[
                 "Insurance Accepted",
                 "Small Groups (5-6 max)",
-                "Licensed Supervision",
+                "Licensed Professionals",
                 "Immediate Openings",
                 "Evidence-Based Care",
                 "Trauma Specialists",
@@ -61,13 +63,24 @@ const Index = () => {
 
             {/* CTAs */}
             <div className="flex flex-col justify-center gap-4 pt-4 sm:flex-row">
-              <Button size="lg" className="shadow-glow text-lg">
-                <Phone className="mr-2 h-5 w-5" />
-                Call Now: (Your Number)
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg">
-                Request Consultation
-              </Button>
+              <Link href={`tel:${phoneNumber}`}>
+                <Button
+                  size="lg"
+                  className="shadow-glow cursor-pointer text-lg"
+                >
+                  <Phone className="mr-2 h-5 w-5" />
+                  {`Call Now: ${phoneNumber}`}
+                </Button>
+              </Link>
+              <Link href={`#`}>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="cursor-pointer text-lg"
+                >
+                  Request Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -156,7 +169,7 @@ const Index = () => {
       </section>
 
       {/* What is IOP */}
-      <section className="bg-muted/30 py-20">
+      <section className="bg-muted/30 pt-20 pb-4">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-6 text-center text-3xl font-bold md:text-4xl">
@@ -202,6 +215,51 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Conditions We Treat */}
+      <section className="bg-muted/30 pb-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-4xl">
+            <p className="text-muted-foreground mb-8 text-center text-2xl font-bold">
+              Conditions We Treat
+            </p>
+
+            <Card className="mb-8">
+              <CardContent className="pt-1">
+                <div className="space-y-4">
+                  <div>
+                    <ul className="grid grid-cols-1 space-y-2 md:grid-cols-2">
+                      {[
+                        "ADHD",
+                        "Anger/mood regulation",
+                        "Anxiety",
+                        "Autism spectrum disorder (ASD)",
+                        "Bipolar disorder",
+                        "Borderline personality disorder (BPD)",
+                        "Bullying",
+                        "Depression",
+                        "Family conflict",
+                        "Oppositional defiant disorder (ODD)",
+                        "Reactive attachment disorder (RAD)",
+                        "Self-harm/cutting",
+                        "Social isolation",
+                        "Suicidal ideation",
+                        "Technology addiction",
+                        "Other mental health conditions",
+                      ].map((item) => (
+                        <li key={item} className="flex items-start space-x-2">
+                          <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                          <span className="text-muted-foreground">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* OP vs IOP Comparison */}
       <section className="container mx-auto px-4 py-20">
         <div className="mx-auto max-w-4xl">
@@ -217,7 +275,7 @@ const Index = () => {
             Five Key Differences
           </h3>
 
-          <div className="space-y-6">
+          <div className="grid grid-cols-1 gap-4 space-y-6 md:grid-cols-2">
             <Card>
               <CardContent className="pt-6">
                 <h4 className="mb-3 text-lg font-bold">1. Time Commitment</h4>
@@ -270,7 +328,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="w-100">
               <CardContent className="pt-6">
                 <h4 className="mb-3 text-lg font-bold">
                   5. Flexibility and Scheduling
@@ -288,10 +346,12 @@ const Index = () => {
             <p className="mb-4 text-lg">
               <strong>Need help determining the right level of care?</strong>
             </p>
-            <Button size="lg" className="shadow-glow">
-              <Phone className="mr-2 h-5 w-5" />
-              Contact Metta Vibes
-            </Button>
+            <Link href={`tel:${phoneNumber}`}>
+              <Button size="lg" className="shadow-glow cursor-pointer">
+                <Phone className="mr-2 h-5 w-5" />
+                Contact Metta Vibes
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -326,7 +386,7 @@ const Index = () => {
 
           <ProgramCard
             title="What the GRIEF?!"
-            subtitle="Grief Support Programming"
+            subtitle="Grief Support Programming (OP)"
             description="Navigate the complex journey of loss with compassionate guidance. Individual therapy and support groups available."
             link="/grief"
             icon={Heart}
@@ -335,7 +395,7 @@ const Index = () => {
 
           <ProgramCard
             title="Metta Works!"
-            subtitle="Life Skills (Ages 13-25)"
+            subtitle="Transitional Age Youth (TAY) - OP"
             description="Ignite confidence and chart your own course! Hands-on coaching for essential life skills and career readiness."
             link="/metta-works"
             icon={Briefcase}
@@ -344,7 +404,7 @@ const Index = () => {
 
           <ProgramCard
             title="Family Playbook"
-            subtitle="Family Skills Training"
+            subtitle="Family Skills Training (OP)"
             description="A practical guide for building family resilience. Workshops and therapy to navigate challenges together."
             link="/family-playbook"
             icon={BookOpen}
@@ -366,20 +426,31 @@ const Index = () => {
                 <h3 className="mb-4 text-xl font-semibold">
                   We Accept Insurance
                 </h3>
-                <div className="mb-6 flex flex-wrap justify-center gap-4">
+                <div className="mb-6 flex flex-wrap justify-center gap-6">
                   {[
-                    "Medicaid",
-                    "Blue Cross Blue Shield",
-                    "Aetna",
-                    "AIHP",
-                    "Cigna",
+                    { name: "Medicaid", imagePath: "/ahcccs_logo.jpg" },
+                    {
+                      name: "Blue Cross Blue Shield",
+                      imagePath: "/bcbs_logo.svg",
+                    },
+                    { name: "Aetna", imagePath: "/aetna_logo.svg" },
+                    { name: "Cigna", imagePath: "/cigna_logo.svg" },
+                    { name: "Evernorth", imagePath: "/evernorth_logo.svg" },
                   ].map((insurance) => (
-                    <div
-                      key={insurance}
-                      className="bg-primary/10 text-primary rounded-full px-4 py-2 text-sm font-medium"
-                    >
-                      {insurance}
-                    </div>
+                    <Image
+                      key={insurance.name}
+                      alt={insurance.name}
+                      src={insurance.imagePath}
+                      height={40}
+                      width={100}
+                      className="h-10 w-25"
+                    />
+                    // <div
+                    //   key={insurance}
+                    //   className="bg-primary/10 text-primary rounded-full px-4 py-2 text-sm font-medium"
+                    // >
+                    //   {insurance}
+                    // </div>
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
@@ -435,10 +506,15 @@ const Index = () => {
             </div>
 
             <div className="mt-12">
-              <Button size="lg" className="shadow-glow text-lg">
-                <Phone className="mr-2 h-5 w-5" />
-                Call Now to Get Started
-              </Button>
+              <Link href={`tel:${phoneNumber}`}>
+                <Button
+                  size="lg"
+                  className="shadow-glow cursor-pointer text-lg"
+                >
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call Now to Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

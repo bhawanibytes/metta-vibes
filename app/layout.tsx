@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Metta Vibes",
-  description: "Behavioral Health",
+  description: "Behavioral Health and Wellness",
 };
 
 export default function RootLayout({

@@ -284,8 +284,8 @@ const MettaWorks = () => {
               Independence is Possible
             </h2>
             <p className="text-muted-foreground text-xl">
-              We'll help you get there. Set up an initial meeting to discuss
-              your goals.
+              {`We'll help you get there. Set up an initial meeting to discuss
+              your goals.`}
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <Button size="lg" className="shadow-glow text-lg">
