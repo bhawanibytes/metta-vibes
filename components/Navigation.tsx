@@ -13,6 +13,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,9 +35,12 @@ const Navigation = () => {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="from-primary to-primary-light bg-linear-to-r bg-clip-text text-2xl font-bold text-transparent">
-              Metta Vibes
-            </div>
+            <Image
+              src={"/metta_vibes_logo.png"}
+              height={60}
+              width={90}
+              alt="Metta Vibes Logo"
+            />
           </Link>
 
           {/* Desktop Navigation */}
