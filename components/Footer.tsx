@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-card border-border mt-20 border-t">
+    <footer className="text-white border-border mt-20 border-t bg-[linear-gradient(45deg,rgba(0,13,27,1)_50%,rgba(0,0,0,1)_100%)] ">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
@@ -24,10 +24,10 @@ const Footer = () => {
                 // className="h-70 w-100"
               />
             </Link>
-            <p className="text-muted-foreground mb-4 text-sm">
+            <p className="text-muted mb-4 text-sm">
               Behavioral Health and Wellness
             </p>
-            <p className="text-muted-foreground text-sm">
+            <p className="text-muted text-sm">
               Intensive Outpatient Programs for Women & Children Healing from
               Trauma
             </p>
@@ -40,7 +40,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/kindred-path"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted hover:text-primary transition-colors"
                 >
                   The Kindred Path
                 </Link>
@@ -48,7 +48,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/metta-cove"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted hover:text-primary transition-colors"
                 >
                   The Metta Cove
                 </Link>
@@ -56,7 +56,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/grief"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted hover:text-primary transition-colors"
                 >
                   What the GRIEF?!
                 </Link>
@@ -64,7 +64,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/metta-works"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted hover:text-primary transition-colors"
                 >
                   Metta Works!
                 </Link>
@@ -72,7 +72,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/family-playbook"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted hover:text-primary transition-colors"
                 >
                   Family Playbook
                 </Link>
@@ -83,7 +83,7 @@ const Footer = () => {
           {/* Insurance */}
           <div>
             <h4 className="mb-4 font-semibold">Insurance Accepted</h4>
-            <ul className="text-muted-foreground space-y-2 text-sm">
+            <ul className="text-muted space-y-2 text-sm">
               <li>Medicaid</li>
               <li>Blue Cross Blue Shield</li>
               <li>Aetna</li>
@@ -99,13 +99,13 @@ const Footer = () => {
               <li className="flex items-start space-x-2">
                 <Phone className="text-primary mt-0.5 h-4 w-4 shrink-0" />
                 <Link href={`tel:${phoneNumber}`}>
-                  <span className="text-muted-foreground">{phoneNumber}</span>
+                  <span className="text-muted">{phoneNumber}</span>
                 </Link>
               </li>
               <li className="flex items-start space-x-2">
                 <Mail className="text-primary mt-0.5 h-4 w-4 shrink-0" />
                 <Link href={`mailto:${mailId}`}>
-                  <span className="text-muted-foreground">
+                  <span className="text-muted">
                     contact@mettavibes.com
                   </span>
                 </Link>
@@ -113,7 +113,7 @@ const Footer = () => {
               <li className="flex items-start space-x-2">
                 <MapPin className="text-primary mt-0.5 h-4 w-4 shrink-0" />
                 <Link href={addressLink} target="_blank">
-                  <span className="text-muted-foreground">Arizona</span>
+                  <span className="text-muted">Arizona</span>
                 </Link>
               </li>
             </ul>

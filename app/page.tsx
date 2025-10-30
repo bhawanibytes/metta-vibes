@@ -13,7 +13,7 @@ import {
   CheckCircle,
   Shield,
 } from "lucide-react";
-import { phoneNumber } from "./constants";
+import { googleFormLink, phoneNumber } from "./constants";
 import Image from "next/image";
 
 const Index = () => {
@@ -22,25 +22,24 @@ const Index = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="bg-gradient-hero absolute inset-0 opacity-10"></div>
-        <div className="relative container mx-auto px-4 py-20 lg:py-32">
-          <div className="mx-auto max-w-4xl space-y-8 text-center">
-            <h1 className="text-4xl leading-tight font-bold md:text-5xl lg:text-6xl">
+      <section className="relative overflow-hidden bg-[linear-gradient(0deg,rgba(0,13,27,0.7)_0%,rgba(182,67,235,0.2)_100%),url('/hero.jpeg')] bg-center bg-no-repeat pb-10">
+        {/* <div className="bg-gradient-hero absolute inset-0 opacity-10"></div> */}
+        <div className="relative container px-4 py-20 lg:py-10">
+          <div className="max-w-4xl space-y-8 text-center">
+            <h1 className="text-4xl leading-tight font-bold text-white md:text-5xl lg:text-6xl">
               Intensive Outpatient Program for{" "}
               <span className="from-primary to-primary-light bg-linear-to-r bg-clip-text text-transparent">
                 Women & Children
               </span>{" "}
               Healing from Trauma
             </h1>
-            <p className="text-muted-foreground text-xl leading-relaxed md:text-2xl">
+            <p className="text-xl leading-relaxed text-gray-300 md:text-2xl">
               Reclaim your story. Build safety. Heal together.
             </p>
-            <p className="text-foreground/80 mx-auto max-w-2xl text-lg">
+            <p className="mx-auto max-w-2xl text-lg font-medium text-gray-400">
               We specialize in trauma recovery for families escaping emotional
               abuse, narcissistic relationships, and complex family trauma.
             </p>
-
             {/* Key Benefits */}
             <div className="grid grid-cols-1 gap-4 pt-8 sm:grid-cols-2 lg:grid-cols-3">
               {[
@@ -56,11 +55,12 @@ const Index = () => {
                   className="flex items-center justify-center space-x-2 sm:justify-start"
                 >
                   <CheckCircle className="text-primary h-5 w-5 shrink-0" />
-                  <span className="text-sm font-medium">{benefit}</span>
+                  <span className="text-sm font-medium text-white">
+                    {benefit}
+                  </span>
                 </div>
               ))}
             </div>
-
             {/* CTAs */}
             <div className="flex flex-col justify-center gap-4 pt-4 sm:flex-row">
               <Link href={`tel:${phoneNumber}`}>
@@ -72,7 +72,7 @@ const Index = () => {
                   {`Call Now: ${phoneNumber}`}
                 </Button>
               </Link>
-              <Link href={`#`}>
+              <Link href={`${googleFormLink}`}>
                 <Button
                   size="lg"
                   variant="outline"
@@ -169,7 +169,7 @@ const Index = () => {
       </section>
 
       {/* What is IOP */}
-      <section className="bg-muted/30 pt-20 pb-4">
+      <section className="bg-[#DEDDDF] pt-20 pb-4">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-6 text-center text-3xl font-bold md:text-4xl">
@@ -179,7 +179,7 @@ const Index = () => {
               Understanding Intensive Outpatient Treatment
             </p>
 
-            <Card className="mb-8">
+            <Card className="bg-primary/5 border-primary/20 mb-8">
               <CardContent className="pt-6">
                 <p className="mb-6 text-lg">
                   Intensive Outpatient Program (IOP) provides{" "}
@@ -216,14 +216,14 @@ const Index = () => {
       </section>
 
       {/* Conditions We Treat */}
-      <section className="bg-muted/30 pb-20">
+      <section className="bg-[#DEDDDF] pb-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <p className="text-muted-foreground mb-8 text-center text-2xl font-bold">
               Conditions We Treat
             </p>
 
-            <Card className="mb-8">
+            <Card className="bg-primary/5 border-primary/20 mb-8">
               <CardContent className="pt-1">
                 <div className="space-y-4">
                   <div>
@@ -261,8 +261,8 @@ const Index = () => {
       </section>
 
       {/* OP vs IOP Comparison */}
-      <section className="container mx-auto px-4 py-20">
-        <div className="mx-auto max-w-4xl">
+      <section className="bg-muted px-4 py-20">
+        <div className="mx-auto max-w-4xl md:w-full">
           <h2 className="mb-6 text-center text-3xl font-bold md:text-4xl">
             How is Outpatient (OP) Different from IOP?
           </h2>
@@ -275,8 +275,8 @@ const Index = () => {
             Five Key Differences
           </h3>
 
-          <div className="grid grid-cols-1 gap-4 space-y-6 md:grid-cols-2">
-            <Card>
+          <div className="grid grid-cols-1 gap-6 space-y-2 md:grid-cols-2">
+            <Card className="bg-primary-foreground border-primary/10 transition-transform duration-600 hover:scale-105">
               <CardContent className="pt-6">
                 <h4 className="mb-3 text-lg font-bold">1. Time Commitment</h4>
                 <p className="text-muted-foreground">
@@ -286,7 +286,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="bg-primary-foreground border-primary/10 transition-transform duration-600 hover:scale-105">
               <CardContent className="pt-6">
                 <h4 className="mb-3 text-lg font-bold">
                   2. Level of Care Intensity
@@ -300,7 +300,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="bg-primary-foreground border-primary/10 transition-transform duration-300 hover:scale-105">
               <CardContent className="pt-6">
                 <h4 className="mb-3 text-lg font-bold">
                   3. Treatment Structure
@@ -314,7 +314,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="bg-primary-foreground border-primary/10 transition-transform duration-300 hover:scale-105">
               <CardContent className="pt-6">
                 <h4 className="mb-3 text-lg font-bold">
                   {"4. Who It's Designed For"}
@@ -328,7 +328,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="w-100">
+            <Card className="bg-primary-foreground border-primary/10 w-109 transition-transform duration-300 hover:scale-105">
               <CardContent className="pt-6">
                 <h4 className="mb-3 text-lg font-bold">
                   5. Flexibility and Scheduling
@@ -343,7 +343,7 @@ const Index = () => {
           </div>
 
           <div className="mt-10 text-center">
-            <p className="mb-4 text-lg">
+            <p className="text-muted mb-4 text-lg">
               <strong>Need help determining the right level of care?</strong>
             </p>
             <Link href={`tel:${phoneNumber}`}>
@@ -357,10 +357,12 @@ const Index = () => {
       </section>
 
       {/* Our Programs */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="mx-auto bg-[linear-gradient(45deg,rgba(0,13,27,1)_20%,rgba(0,13,25,0.9)_100%)] px-4 py-20">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold md:text-4xl">Our Programs</h2>
-          <p className="text-muted-foreground text-xl">
+          <h2 className="text-muted mb-4 text-3xl font-bold md:text-4xl">
+            Our Programs
+          </h2>
+          <p className="text-muted-foreground text-xl font-normal">
             Specialized support for every stage of healing
           </p>
         </div>

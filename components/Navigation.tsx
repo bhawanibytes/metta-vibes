@@ -30,15 +30,15 @@ const Navigation = () => {
   const isActive = (path: string) => location === path;
 
   return (
-    <nav className="bg-card/95 border-border sticky top-0 z-50 border-b shadow-sm backdrop-blur-md">
+    <nav className="border-border top-0 z-50 border-b bg-[#000d1be3] shadow-sm backdrop-blur-md md:sticky">
       <div className="container mx-auto px-4">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-30 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
               src={"/metta_vibes_logo.png"}
-              height={60}
-              width={90}
+              height={100}
+              width={100}
               alt="Metta Vibes Logo"
             />
           </Link>
@@ -47,10 +47,8 @@ const Navigation = () => {
           <div className="hidden items-center space-x-8 lg:flex">
             <Link
               href="/"
-              className={`text-sm font-medium transition-colors ${
-                isActive("/")
-                  ? "text-primary"
-                  : "text-foreground/70 hover:text-primary"
+              className={`text-lg font-normal transition-colors ${
+                isActive("/") ? "text-primary" : "hover:text-primary text-white"
               }`}
             >
               Home
@@ -58,10 +56,10 @@ const Navigation = () => {
 
             <Link
               href="/about"
-              className={`text-sm font-medium transition-colors ${
+              className={`text-lg font-normal transition-colors ${
                 isActive("/about")
                   ? "text-primary"
-                  : "text-foreground/70 hover:text-primary"
+                  : "hover:text-primary text-white"
               }`}
             >
               About Us
@@ -70,7 +68,7 @@ const Navigation = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-foreground/70 hover:text-primary data-[state=open]:text-primary text-sm font-medium">
+                  <NavigationMenuTrigger className="hover:text-primary data-[state=open]:text-primary bg-transparent text-lg font-normal text-white hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:hover:bg-transparent data-[state=open]:focus:bg-transparent">
                     Programs
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -80,13 +78,13 @@ const Navigation = () => {
                           <NavigationMenuLink asChild>
                             <Link
                               href={link.path}
-                              className={`hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block space-y-1 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none ${
+                              className={`hover:bg-primary hover:text-accent-foreground focus:bg-primary focus:text-accent-foreground block space-y-1 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none ${
                                 isActive(link.path)
-                                  ? "bg-accent/50 text-primary font-medium"
+                                  ? "bg-primary/50 text-primary font-medium"
                                   : ""
                               }`}
                             >
-                              <div className="text-sm leading-none font-medium">
+                              <div className="text-lg leading-none font-normal">
                                 {link.name}
                               </div>
                             </Link>
@@ -101,10 +99,10 @@ const Navigation = () => {
 
             <Link
               href="/contact"
-              className={`text-sm font-medium transition-colors ${
+              className={`text-lg font-normal transition-colors ${
                 isActive("/contact")
                   ? "text-primary"
-                  : "text-foreground/70 hover:text-primary"
+                  : "hover:text-primary text-white"
               }`}
             >
               Contact
