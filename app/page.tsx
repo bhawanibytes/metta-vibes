@@ -22,7 +22,7 @@ const Index = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[linear-gradient(0deg,rgba(0,13,27,0.7)_0%,rgba(182,67,235,0.2)_100%),url('/hero.jpeg')] bg-center bg-no-repeat pb-10">
+      <section className="relative overflow-hidden bg-[linear-gradient(0deg,rgba(0,13,27,0.7)_0%,rgba(182,67,235,0.2)_100%),url('/hero.jpeg')] bg-position-[right_25%_center] bg-no-repeat pb-10 md:bg-center">
         {/* <div className="bg-gradient-hero absolute inset-0 opacity-10"></div> */}
         <div className="relative container px-4 py-20 lg:py-10">
           <div className="max-w-4xl space-y-8 text-center">
