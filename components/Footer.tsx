@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="text-white border-border mt-20 border-t bg-[linear-gradient(45deg,rgba(0,13,27,1)_50%,rgba(0,0,0,1)_100%)] ">
+    <footer className="text-white border-border mt-20 border-t bg-[#03172d] ">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}

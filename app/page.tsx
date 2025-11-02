@@ -357,7 +357,7 @@ const Index = () => {
       </section>
 
       {/* Our Programs */}
-      <section className="mx-auto bg-[linear-gradient(45deg,rgba(0,13,27,1)_20%,rgba(0,13,25,0.9)_100%)] px-4 py-20">
+      <section className="mx-auto bg-[#03172d] px-4 py-20">
         <div className="mb-12 text-center">
           <h2 className="text-muted mb-4 text-3xl font-bold md:text-4xl">
             Our Programs
