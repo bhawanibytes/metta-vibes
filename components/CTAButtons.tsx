@@ -9,7 +9,7 @@ function CTAButtons() {
       <Link href={`tel:${phoneNumber}`}>
         <Button size="lg" className="shadow-glow cursor-pointer text-lg">
           <Phone className="mr-2 h-5 w-5" />
-          {`Call Now: ${phoneNumber}`}
+          {`Call Now: 623-267-6240`}
         </Button>
       </Link>
       <Link href={`${googleFormLink}`}>

@@ -1,4 +1,3 @@
-import { Button } from "@components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@components/ui/card";
 import {
   Accordion,
@@ -7,7 +6,6 @@ import {
   AccordionTrigger,
 } from "@components/ui/accordion";
 import {
-  Phone,
   Heart,
   HeartPulse,
   ArrowRightIcon,
@@ -23,15 +21,14 @@ import {
   BookOpen,
   UserCheck,
 } from "lucide-react";
-import Link from "next/link";
-import { phoneNumber } from "@app/constants";
+import CTAButtons from "@components/CTAButtons";
 
 const Grief = () => {
   return (
     <div className="bg-background flex min-h-screen flex-col">
       <main className="grow">
         {/* Hero Section */}
-        <section className="bg-primary px-4 py-20 text-primary-foreground">
+        <section className="bg-primary text-primary-foreground px-4 py-20">
           <div className="container mx-auto max-w-4xl text-center">
             <h1 className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl">
               What the GRIEF?!
@@ -40,9 +37,7 @@ const Grief = () => {
               Supporting Children Through Loss with Compassionate Care
             </p>
             <p className="text-primary-foreground/80 mx-auto max-w-2xl text-lg leading-relaxed">
-              {`
-
-               Grief is not something to "get over"—it's something we learn to carry with support, understanding, and connection.`}
+              {`Grief is not something to "get over"—it's something we learn to carry with support, understanding, and connection.`}
             </p>
           </div>
         </section>
@@ -52,16 +47,17 @@ const Grief = () => {
           <div className="container mx-auto max-w-6xl">
             <div className="mb-12 text-center">
               <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-                The Power of Peer Support
+                The Power of Peer Support: Benefits of Group Participation
               </h2>
               <p className="text-muted-foreground mx-auto max-w-3xl text-lg">
-                When children experience loss, they often feel isolated. Our
-                program brings together young people who share the experience of
-                loss, creating a supportive community where healing can begin.
+                When children experience loss, they often feel isolated and
+                alone in their grief. The What the GRIEF?! program brings
+                together young people who share the common experience of loss,
+                creating a supportive community where healing can begin.
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <Card className="shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
@@ -73,9 +69,7 @@ const Grief = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    {`
-
-                     Children discover they're not alone. Being surrounded by peers who understand helps break through isolation.`}
+                    {`Children attending our grief support groups discover they are not alone in their experience. Being surrounded by peers who truly understand what they're going through helps break through the isolation that grief often brings. This connection with others who "get it" provides validation that their feelings are normal and shared by others their age.`}
                   </p>
                 </CardContent>
               </Card>
@@ -85,12 +79,19 @@ const Grief = () => {
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Shield className="h-6 w-6 text-white" />
                   </div>
-                  <CardTitle className="text-lg">Safe Space</CardTitle>
+                  <CardTitle className="text-lg">
+                    A Safe Space for Expression
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    A judgment-free environment to openly express difficult
-                    emotions without fear of burdening others.
+                    Our groups provide a judgment-free environment where
+                    children can openly express difficult emotions like sadness,
+                    anger, confusion, or even guilt. Many grieving children
+                    worry about upsetting their surviving family members, making
+                    it hard to share their true feelings at home. In group, they
+                    find a safe place to be honest about their grief without
+                    fear of burdening others.
                   </p>
                 </CardContent>
               </Card>
@@ -100,12 +101,18 @@ const Grief = () => {
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <MessageCircle className="h-6 w-6 text-white" />
                   </div>
-                  <CardTitle className="text-lg">Emotional Literacy</CardTitle>
+                  <CardTitle className="text-lg">
+                    Developing Language for Grief
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Learn age-appropriate ways to name and express feelings—a
-                    lifelong tool for processing difficult experiences.
+                    Children often lack the vocabulary to describe their complex
+                    grief experiences. Through facilitated discussions and
+                    activities, participants learn age-appropriate ways to name
+                    and express their feelings. This emotional literacy becomes
+                    a lifelong tool for processing difficult experiences and
+                    communicating their needs.
                   </p>
                 </CardContent>
               </Card>
@@ -115,12 +122,19 @@ const Grief = () => {
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Lightbulb className="h-6 w-6 text-white" />
                   </div>
-                  <CardTitle className="text-lg">Healthy Coping</CardTitle>
+                  <CardTitle className="text-lg">
+                    Learning Healthy Coping Strategies
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Share techniques and learn strategies from facilitators and
-                    peers for managing grief effectively.
+                    Group members share coping techniques and learn new
+                    strategies from both facilitators and peers. Seeing how
+                    other children manage their grief provides practical
+                    examples and normalizes the variety of ways people grieve.
+                    Children discover healthy outlets for their emotions and
+                    build a toolkit of coping skills they can use long after the
+                    program ends.
                   </p>
                 </CardContent>
               </Card>
@@ -130,13 +144,17 @@ const Grief = () => {
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Heart className="h-6 w-6 text-white" />
                   </div>
-                  <CardTitle className="text-lg">Normalizing Grief</CardTitle>
+                  <CardTitle className="text-lg">
+                    {" "}
+                    Normalizing the Grief Journey
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {`
 
-                     Witness the many faces of grief and learn that every unique experience is valid—there's no "right way" to feel.
+                     Every child grieves differently, and there's no "right way" to feel. In group, children witness the many faces of grief and learn that their unique experience is valid. Whether they feel sad one moment and happy the next, or experience grief in waves rather than constantly, they see that all of these responses are normal parts of the healing process.
+
                     `}
                   </p>
                 </CardContent>
@@ -147,12 +165,18 @@ const Grief = () => {
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <TrendingUp className="h-6 w-6 text-white" />
                   </div>
-                  <CardTitle className="text-lg">Building Resilience</CardTitle>
+                  <CardTitle className="text-lg">
+                    Building Resilience and Hope
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    See peers further along their journey, providing living
-                    proof that healing is possible and life can feel better.
+                    Connecting with peers at different stages of their grief
+                    journey allows children to see that healing is possible.
+                    Those further along in their process serve as living proof
+                    that life can feel better over time, providing hope to those
+                    more recently bereaved. This peer modeling builds resilience
+                    and confidence in their ability to navigate their loss.
                   </p>
                 </CardContent>
               </Card>
@@ -162,12 +186,18 @@ const Grief = () => {
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Activity className="h-6 w-6 text-white" />
                   </div>
-                  <CardTitle className="text-lg">Better Outcomes</CardTitle>
+                  <CardTitle className="text-lg">
+                    Reducing Behavioral and Emotional Difficulties
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Research shows peer group support leads to fewer behavioral
-                    problems and better emotional regulation.
+                    Research shows that children who receive grief support,
+                    particularly in peer group settings, experience fewer
+                    behavioral problems, improved emotional regulation, and
+                    better overall adjustment following loss. Early intervention
+                    through group support can prevent more serious mental health
+                    challenges down the road.
                   </p>
                 </CardContent>
               </Card>
@@ -177,12 +207,17 @@ const Grief = () => {
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Smile className="h-6 w-6 text-white" />
                   </div>
-                  <CardTitle className="text-lg">Lasting Bonds</CardTitle>
+                  <CardTitle className="text-lg">
+                    Creating Lasting Bonds
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Friendships formed often extend beyond the program, creating
-                    a support network for years to come.
+                    The friendships formed in grief groups often extend beyond
+                    the program itself. Children develop meaningful connections
+                    with others who understand their experience in a unique way,
+                    creating a support network they can turn to long after group
+                    sessions end.
                   </p>
                 </CardContent>
               </Card>
@@ -196,13 +231,15 @@ const Grief = () => {
             <div className="mb-12 text-center">
               {/* <AlertCircle className="text-primary mx-auto mb-4 h-12 w-12" /> */}
               <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-                Recognizing When a Child Needs Support
+                Recognizing When a Child Needs Support: Warning Signs of
+                Grief-Related Struggles
               </h2>
               <p className="text-muted-foreground mx-auto max-w-3xl text-lg">
-                While grief is natural, certain signs may indicate a child would
-                benefit from additional support. Children express grief
-                differently than adults, often in waves rather than following a
-                linear path.
+                Children express grief differently than adults, and their grief
+                often comes in waves rather than following a linear path. While
+                grief itself is a natural response to loss, certain signs may
+                indicate a child is struggling and would benefit from additional
+                support.
               </p>
             </div>
 
@@ -245,6 +282,9 @@ const Grief = () => {
                         • Panic attacks or intense physical reactions to
                         reminders of loss
                       </li>
+                      <li>
+                        • Excessive worry about their own health or mortality
+                      </li>
                     </ul>
                   </div>
                   <div>
@@ -278,6 +318,7 @@ const Grief = () => {
                         • Avoiding places or people that remind them of their
                         loss
                       </li>
+                      <li>• Loss of interest in hobbies or interests</li>
                     </ul>
                   </div>
                 </AccordionContent>
@@ -584,17 +625,7 @@ const Grief = () => {
               `}
               </p>
               <div className="flex flex-col justify-center gap-4 pt-4 sm:flex-row">
-                <Link href={`tel:${phoneNumber}`}>
-                  <Button size="lg" className="shadow-soft text-lg">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Contact Us Today
-                  </Button>
-                </Link>
-                <Link href={`tel:${phoneNumber}`}>
-                  <Button size="lg" variant="outline" className="text-lg">
-                    Learn More About Our Programs
-                  </Button>
-                </Link>
+                <CTAButtons />
               </div>
             </div>
           </div>
