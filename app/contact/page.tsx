@@ -1,10 +1,6 @@
-import Footer from "@components/Footer";
-import Navigation from "@components/Navigation";
-
 export default function page() {
   return (
     <div className="flex min-h-screen flex-col">
-      <Navigation />
       <main className="flex-1">
         <section className="px-4 py-20">
           <div className="container mx-auto max-w-4xl">
@@ -20,7 +16,6 @@ export default function page() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

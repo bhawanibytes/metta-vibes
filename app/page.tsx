@@ -1,5 +1,3 @@
-import Navigation from "@components/Navigation";
-import Footer from "@components/Footer";
 import ProgramCard from "@components/ProgramCard";
 import { Button } from "@components/ui/button";
 import { Card, CardContent } from "@components/ui/card";
@@ -14,13 +12,11 @@ import {
   Shield,
 } from "lucide-react";
 import { googleFormLink, phoneNumber } from "./constants";
-import Image from "next/image";
+import InsuranceCard from "@components/InsuranceCard";
 
 const Index = () => {
   return (
     <div className="bg-gradient-calm min-h-screen">
-      <Navigation />
-
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-[linear-gradient(0deg,rgba(0,13,27,0.7)_0%,rgba(182,67,235,0.2)_100%),url('/hero.jpeg')] bg-position-[right_25%_center] bg-no-repeat pb-10 md:bg-center">
         {/* <div className="bg-gradient-hero absolute inset-0 opacity-10"></div> */}
@@ -169,7 +165,7 @@ const Index = () => {
       </section>
 
       {/* What is IOP */}
-      <section className="bg-[#DEDDDF] pt-20 pb-4">
+      <section className="bg-primary/10 pt-20 pb-4">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-6 text-center text-3xl font-bold md:text-4xl">
@@ -216,7 +212,7 @@ const Index = () => {
       </section>
 
       {/* Conditions We Treat */}
-      <section className="bg-[#DEDDDF] pb-20">
+      <section className="bg-primary/10 pb-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <p className="text-muted-foreground mb-8 text-center text-2xl font-bold">
@@ -357,12 +353,12 @@ const Index = () => {
       </section>
 
       {/* Our Programs */}
-      <section className="mx-auto bg-[#03172d] px-4 py-20">
+      <section className="bg-primary/20 mx-auto px-4 py-20">
         <div className="mb-12 text-center">
-          <h2 className="text-muted mb-4 text-3xl font-bold md:text-4xl">
+          <h2 className="text-secondary-foreground mb-4 text-3xl font-bold md:text-4xl">
             Our Programs
           </h2>
-          <p className="text-muted-foreground text-xl font-normal">
+          <p className="text-foreground text-xl font-normal">
             Specialized support for every stage of healing
           </p>
         </div>
@@ -383,7 +379,7 @@ const Index = () => {
             description="A safe harbor for young hearts healing from abuse, loss, and family trauma. Small groups, 9-15 hours/week."
             link="/metta-cove"
             icon={Users}
-            gradient="from-secondary to-accent"
+            gradient="from-primary to-primary-light"
           />
 
           <ProgramCard
@@ -392,7 +388,7 @@ const Index = () => {
             description="Navigate the complex journey of loss with compassionate guidance. Individual therapy and support groups available."
             link="/grief"
             icon={Heart}
-            gradient="from-accent to-primary"
+            gradient="from-primary to-primary-light"
           />
 
           <ProgramCard
@@ -401,7 +397,7 @@ const Index = () => {
             description="Ignite confidence and chart your own course! Hands-on coaching for essential life skills and career readiness."
             link="/metta-works"
             icon={Briefcase}
-            gradient="from-primary-light to-secondary"
+            gradient="from-primary to-primary-light"
           />
 
           <ProgramCard
@@ -410,20 +406,20 @@ const Index = () => {
             description="A practical guide for building family resilience. Workshops and therapy to navigate challenges together."
             link="/family-playbook"
             icon={BookOpen}
-            gradient="from-secondary to-primary"
+            gradient="from-primary to-primary-light"
           />
         </div>
       </section>
 
       {/* Insurance & Contact */}
-      <section className="bg-muted/30 py-20">
+      <section className="bg-muted/30 pt-20 pb-40">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="mb-6 text-3xl font-bold md:text-4xl">
               Insurance & How to Enroll
             </h2>
 
-            <Card className="mb-8">
+            {/* <Card className="mb-8">
               <CardContent className="pt-6">
                 <h3 className="mb-4 text-xl font-semibold">
                   We Accept Insurance
@@ -460,7 +456,8 @@ const Index = () => {
                   and billing. Cost should never be a barrier to healing.
                 </p>
               </CardContent>
-            </Card>
+            </Card> */}
+            <InsuranceCard />
 
             <div className="space-y-8">
               <h3 className="text-2xl font-semibold">How to Start IOP</h3>
@@ -521,8 +518,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };

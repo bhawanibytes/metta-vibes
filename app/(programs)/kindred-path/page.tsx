@@ -1,16 +1,21 @@
-import Navigation from "@components/Navigation";
-import Footer from "@components/Footer";
-import { Button } from "@components/ui/button";
+import CTAButtons from "@components/CTAButtons";
+import InsuranceCard from "@components/InsuranceCard";
+
 import { Card, CardContent } from "@components/ui/card";
-import { CheckCircle, Phone, Shield, Heart, Users, Clock } from "lucide-react";
+import {
+  CheckCircle,
+  Shield,
+  Heart,
+  ArrowRightIcon,
+  Users,
+  Clock,
+} from "lucide-react";
 
 const KindredPath = () => {
   return (
     <div className="bg-gradient-calm min-h-screen">
-      <Navigation />
-
       {/* Hero */}
-      <section className="bg-gradient-hero relative overflow-hidden text-white">
+      <section className="bg-primary relative overflow-hidden text-white">
         <div className="container mx-auto px-4 py-20 lg:py-24">
           <div className="mx-auto max-w-4xl space-y-6 text-center">
             <h1 className="text-4xl leading-tight font-bold md:text-5xl lg:text-6xl">
@@ -76,7 +81,7 @@ const KindredPath = () => {
                   "You're ready to heal with other women who truly understand",
                 ].map((item) => (
                   <li key={item} className="flex items-start space-x-2">
-                    <Heart className="text-secondary mt-0.5 h-5 w-5 shrink-0" />
+                    <ArrowRightIcon className="text-secondary mt-0.5 h-5 w-5 shrink-0" />
                     <span className="text-muted-foreground">{item}</span>
                   </li>
                 ))}
@@ -138,8 +143,10 @@ const KindredPath = () => {
                     Process Groups (Daily, 3 hours)
                   </h3>
                   <p className="text-muted-foreground mb-3">
+                    {`
                     Share your story, break isolation, and realize: you're not
                     alone, and you're not crazy.
+                  `}
                   </p>
                   <p className="text-muted-foreground text-sm italic">
                     Topics: Understanding narcissistic abuse, trauma bonding,
@@ -187,11 +194,14 @@ const KindredPath = () => {
           <Card className="bg-primary/5 border-primary/20 mb-8">
             <CardContent className="pt-6">
               <p className="mb-6 text-lg">
+                {`
                 We understand that healing from emotional abuse and narcissistic
-                relationships isn't linear.{" "}
+                relationships isn't linear. `}
                 <strong>
+                  {`
                   You didn't "just" experience heartbreak—you experienced
                   psychological warfare.
+                  `}
                 </strong>
               </p>
 
@@ -262,34 +272,7 @@ const KindredPath = () => {
               </CardContent>
             </Card>
 
-            <Card>
-              <CardContent className="pt-6">
-                <h3 className="mb-4 text-lg font-semibold">
-                  Insurance Accepted
-                </h3>
-                <div className="mb-4 flex flex-wrap gap-3">
-                  {[
-                    "Medicaid",
-                    "Blue Cross Blue Shield",
-                    "Aetna",
-                    "AIHP",
-                    "Cigna",
-                  ].map((ins) => (
-                    <span
-                      key={ins}
-                      className="bg-primary/10 text-primary rounded-full px-3 py-1 text-sm"
-                    >
-                      {ins}
-                    </span>
-                  ))}
-                </div>
-                <p className="text-muted-foreground">
-                  We handle insurance verification, prior authorization,
-                  billing, and appeals. Cost should never be a barrier to
-                  healing.
-                </p>
-              </CardContent>
-            </Card>
+            <InsuranceCard />
           </div>
         </div>
       </section>
@@ -301,22 +284,16 @@ const KindredPath = () => {
             Ready to Begin Healing?
           </h2>
           <p className="text-muted-foreground text-xl">
+            {`
             You deserve to feel safe. You deserve to be free. We're here to
             help.
+          `}
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
-            <Button size="lg" className="shadow-glow text-lg">
-              <Phone className="mr-2 h-5 w-5" />
-              Call Now: (Your Number)
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg">
-              Request Consultation
-            </Button>
+            <CTAButtons />
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };

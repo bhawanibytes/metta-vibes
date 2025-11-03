@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { phoneNumber } from "@app/constants";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,7 @@ const Navigation = () => {
     { name: "What the GRIEF?!", path: "/grief" },
     { name: "Metta Works!", path: "/metta-works" },
     { name: "Family Playbook", path: "/family-playbook" },
+    { name: "Counseling Services", path: "/counseling-services" },
   ];
 
   const isActive = (path: string) => location === path;
@@ -72,7 +74,7 @@ const Navigation = () => {
                     Programs
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="bg-card grid w-50 gap-3 p-4">
+                    <ul className="bg-card grid w-50 gap-3">
                       {programLinks.map((link) => (
                         <li key={link.path}>
                           <NavigationMenuLink asChild>
@@ -111,10 +113,12 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden items-center space-x-4 lg:flex">
-            <Button variant="default" size="lg" className="shadow-soft">
-              <Phone className="mr-2 h-4 w-4" />
-              Call Now
-            </Button>
+            <Link href={`tel:${phoneNumber}`}>
+              <Button variant="default" size="lg" className="shadow-soft">
+                <Phone className="mr-2 h-4 w-4" />
+                Call Now
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -122,7 +126,11 @@ const Navigation = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="hover:bg-muted rounded-lg p-2 transition-colors lg:hidden"
           >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isOpen ? (
+              <X className="h-6 w-6 text-white" />
+            ) : (
+              <Menu className="h-6 w-6 text-white" />
+            )}
           </button>
         </div>
 
@@ -135,7 +143,7 @@ const Navigation = () => {
               className={`block rounded-lg px-4 py-3 transition-colors ${
                 isActive("/")
                   ? "bg-primary/10 text-primary font-medium"
-                  : "text-foreground/70 hover:bg-muted"
+                  : "hover:bg-muted text-white"
               }`}
             >
               Home
@@ -147,14 +155,14 @@ const Navigation = () => {
               className={`block rounded-lg px-4 py-3 transition-colors ${
                 isActive("/about")
                   ? "bg-primary/10 text-primary font-medium"
-                  : "text-foreground/70 hover:bg-muted"
+                  : "hover:bg-muted text-white"
               }`}
             >
               About Us
             </Link>
 
             <div className="px-4 py-2">
-              <div className="text-foreground/90 mb-2 text-sm font-semibold">
+              <div className="text mb-2 bg-transparent text-base font-normal text-white">
                 Programs
               </div>
               <div className="space-y-1 pl-2">
@@ -166,7 +174,7 @@ const Navigation = () => {
                     className={`block rounded-lg px-3 py-2 text-sm transition-colors ${
                       isActive(link.path)
                         ? "bg-primary/10 text-primary font-medium"
-                        : "text-foreground/70 hover:bg-muted"
+                        : "hover:bg-muted text-white"
                     }`}
                   >
                     {link.name}
@@ -181,17 +189,19 @@ const Navigation = () => {
               className={`block rounded-lg px-4 py-3 transition-colors ${
                 isActive("/contact")
                   ? "bg-primary/10 text-primary font-medium"
-                  : "text-foreground/70 hover:bg-muted"
+                  : "hover:bg-muted text-white"
               }`}
             >
               Contact
             </Link>
 
             <div className="px-4 pt-4">
-              <Button variant="default" size="lg" className="w-full">
-                <Phone className="mr-2 h-4 w-4" />
-                Call Now
-              </Button>
+              <Link href={`tel:${phoneNumber}`}>
+                <Button variant="default" size="lg" className="w-full">
+                  <Phone className="mr-2 h-4 w-4" />
+                  Call Now
+                </Button>
+              </Link>
             </div>
           </div>
         )}

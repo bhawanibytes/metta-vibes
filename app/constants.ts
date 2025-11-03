@@ -10,5 +10,6 @@ export const socials = {
   "Twitter/X": "https://twitter.com/mettavibes",
   LinkedIn: "https://www.linkedin.com/in/metta-vibes-61a750266/",
 };
-export const developerGithub = "https://github.com/Bhawanibytes"
-export const googleFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSfgjx_xmBcsumE9Px4DCMlkmtnOpEOPzgB9i65eQHiNulx8Cg/viewform"
+export const developerGithub = "https://github.com/Bhawanibytes";
+export const googleFormLink =
+  "https://docs.google.com/forms/d/e/1FAIpQLSfgjx_xmBcsumE9Px4DCMlkmtnOpEOPzgB9i65eQHiNulx8Cg/viewform";

@@ -1,24 +1,20 @@
-import Navigation from "@components/Navigation";
-import Footer from "@components/Footer";
-import { Button } from "@components/ui/button";
+import CTAButtons from "@components/CTAButtons";
 import { Card, CardContent } from "@components/ui/card";
 import {
-  Phone,
   Briefcase,
   TrendingUp,
   Home,
   DollarSign,
   Heart,
   Users,
+  ArrowRightIcon,
 } from "lucide-react";
 
 const MettaWorks = () => {
   return (
     <div className="bg-gradient-calm min-h-screen">
-      <Navigation />
-
       {/* Hero */}
-      <section className="from-primary-light to-secondary relative overflow-hidden bg-linear-to-br text-white">
+      <section className="bg-primary relative overflow-hidden text-white">
         <div className="container mx-auto px-4 py-20 lg:py-24">
           <div className="mx-auto max-w-4xl space-y-6 text-center">
             <h1 className="text-4xl leading-tight font-bold md:text-5xl lg:text-6xl">
@@ -78,7 +74,7 @@ const MettaWorks = () => {
                   "Anyone 13-25 who wants practical life skills coaching",
                 ].map((item) => (
                   <li key={item} className="flex items-start space-x-2">
-                    <Heart className="text-secondary mt-0.5 h-5 w-5 shrink-0" />
+                    <ArrowRightIcon className="text-secondary mt-0.5 h-5 w-5 shrink-0" />
                     <span className="text-muted-foreground">{item}</span>
                   </li>
                 ))}
@@ -288,19 +284,11 @@ const MettaWorks = () => {
               your goals.`}
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
-              <Button size="lg" className="shadow-glow text-lg">
-                <Phone className="mr-2 h-5 w-5" />
-                Call Now: (Your Number)
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg">
-                Request Consultation
-              </Button>
+              <CTAButtons />
             </div>
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };

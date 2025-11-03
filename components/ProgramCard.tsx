@@ -28,7 +28,7 @@ const ProgramCard = ({
   gradient = "from-primary to-primary-light",
 }: ProgramCardProps) => {
   return (
-    <Card className="group hover:shadow-glow border-border/50 hover:border-primary/30 flex h-full flex-col transition-all duration-300">
+    <Card className="group bg-primary/5 hover:shadow-glow border-border/50 hover:border-primary/30 flex h-full flex-col transition-all duration-300">
       <CardHeader>
         <div
           className={`h-14 w-14 rounded-xl bg-linear-to-br ${gradient} mb-4 flex items-center justify-center transition-transform duration-300 group-hover:scale-110`}
@@ -41,7 +41,7 @@ const ProgramCard = ({
         </CardDescription>
       </CardHeader>
       <CardContent className="grow">
-        <p className="text-muted-foreground leading-relaxed">{description}</p>
+        <p className="text-foreground/70 leading-relaxed">{description}</p>
       </CardContent>
       <CardFooter>
         <Link href={link} className="w-full">

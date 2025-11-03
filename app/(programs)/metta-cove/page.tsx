@@ -1,23 +1,13 @@
-import Navigation from "@components/Navigation";
-import Footer from "@components/Footer";
-import { Button } from "@components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  CheckCircle,
-  Phone,
-  Heart,
-  Users,
-  Palette,
-  BookOpen,
-} from "lucide-react";
+import CTAButtons from "@components/CTAButtons";
+import InsuranceCard from "@components/InsuranceCard";
+import { Card, CardContent } from "@components/ui/card";
+import { CheckCircle, Heart, Users, Palette, BookOpen } from "lucide-react";
 
 const MettaCove = () => {
   return (
     <div className="bg-gradient-calm min-h-screen">
-      <Navigation />
-
       {/* Hero */}
-      <section className="bg-gradient-warm relative overflow-hidden text-white">
+      <section className="bg-primary relative overflow-hidden text-white">
         <div className="container mx-auto px-4 py-20 lg:py-24">
           <div className="mx-auto max-w-4xl space-y-6 text-center">
             <h1 className="text-4xl leading-tight font-bold md:text-5xl lg:text-6xl">
@@ -153,9 +143,11 @@ const MettaCove = () => {
                     Group Therapy Sessions (Daily)
                   </h3>
                   <p className="text-muted-foreground">
+                    {`
                     Process complex emotions in a supportive peer environment,
                     learn they're not alone, build connection with others who
                     "get it."
+                  `}
                   </p>
                 </CardContent>
               </Card>
@@ -179,8 +171,10 @@ const MettaCove = () => {
                     Expressive Arts & Play Therapy
                   </h3>
                   <p className="text-muted-foreground">
+                    {`
                     Art, music, movement, and play as healing tools. Safe ways
                     to express what words can't capture.
+                  `}
                   </p>
                 </CardContent>
               </Card>
@@ -210,9 +204,11 @@ const MettaCove = () => {
           <Card className="bg-secondary/5 border-secondary/20 mb-8">
             <CardContent className="pt-6">
               <p className="mb-6 text-lg">
+                {`
                 We understand that children who've experienced abuse or
                 witnessed harm to loved ones need more than traditional
-                once-a-week therapy.{" "}
+                once-a-week therapy.
+              `}
                 <strong>
                   Trauma impacts kids daily—so healing support should be daily
                   too.
@@ -283,33 +279,7 @@ const MettaCove = () => {
               </CardContent>
             </Card>
 
-            <Card>
-              <CardContent className="pt-6">
-                <h3 className="mb-4 text-lg font-semibold">
-                  Insurance Accepted
-                </h3>
-                <div className="mb-4 flex flex-wrap gap-3">
-                  {[
-                    "Medicaid",
-                    "Blue Cross Blue Shield",
-                    "Aetna",
-                    "AIHP",
-                    "Cigna",
-                  ].map((ins) => (
-                    <span
-                      key={ins}
-                      className="bg-secondary/10 text-secondary rounded-full px-3 py-1 text-sm"
-                    >
-                      {ins}
-                    </span>
-                  ))}
-                </div>
-                <p className="text-muted-foreground">
-                  Cost should never prevent your child from healing. We handle
-                  all insurance verification, prior authorization, and billing.
-                </p>
-              </CardContent>
-            </Card>
+            <InsuranceCard />
           </div>
         </div>
       </section>
@@ -321,21 +291,13 @@ const MettaCove = () => {
             Ready to Learn More?
           </h2>
           <p className="text-muted-foreground text-xl">
-            Your child deserves to feel safe. We're here to help.
+            {`Your child deserves to feel safe. We're here to help.`}
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
-            <Button size="lg" className="shadow-glow text-lg">
-              <Phone className="mr-2 h-5 w-5" />
-              Call Now: (Your Number)
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg">
-              Request Consultation
-            </Button>
+            <CTAButtons />
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };
