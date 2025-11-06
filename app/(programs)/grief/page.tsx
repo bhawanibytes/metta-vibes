@@ -22,6 +22,7 @@ import {
   UserCheck,
 } from "lucide-react";
 import CTAButtons from "@components/CTAButtons";
+import InsuranceCard from "@components/InsuranceCard";
 
 const Grief = () => {
   return (
@@ -603,6 +604,17 @@ const Grief = () => {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </section>
+        {/* Insurance & Contact */}
+        <section className="bg-muted/30 pt-20">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto max-w-4xl text-center">
+              <h2 className="mb-6 text-3xl font-bold md:text-4xl">
+                Insurance & How to Enroll
+              </h2>
+              <InsuranceCard />
+            </div>
           </div>
         </section>
 

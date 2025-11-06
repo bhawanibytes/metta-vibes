@@ -16,7 +16,7 @@ import InsuranceCard from "@components/InsuranceCard";
 
 const Index = () => {
   return (
-    <div className="bg-gradient-calm min-h-screen">
+    <div className="bg-gradient-calm overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-[linear-gradient(0deg,rgba(0,13,27,0.7)_0%,rgba(182,67,235,0.2)_100%),url('/hero.jpeg')] bg-position-[right_25%_center] bg-no-repeat pb-10 md:bg-center">
         {/* <div className="bg-gradient-hero absolute inset-0 opacity-10"></div> */}
@@ -65,7 +65,7 @@ const Index = () => {
                   className="shadow-glow cursor-pointer text-lg"
                 >
                   <Phone className="mr-2 h-5 w-5" />
-                  {`Call Now: ${phoneNumber}`}
+                  {`Call Now: 623-267-6240`}
                 </Button>
               </Link>
               <Link href={`${googleFormLink}`}>
@@ -353,7 +353,7 @@ const Index = () => {
       </section>
 
       {/* Our Programs */}
-      <section className="bg-primary/20 mx-auto px-4 py-20">
+      <section className="bg-primary-foreground mx-auto px-4 py-20">
         <div className="mb-12 text-center">
           <h2 className="text-secondary-foreground mb-4 text-3xl font-bold md:text-4xl">
             Our Programs

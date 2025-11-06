@@ -1,3 +1,4 @@
+// finished
 import CTAButtons from "@components/CTAButtons";
 import { Card, CardContent } from "@components/ui/card";
 import {
@@ -9,6 +10,7 @@ import {
   Users,
   ArrowRightIcon,
 } from "lucide-react";
+import Image from "next/image";
 
 const MettaWorks = () => {
   return (
@@ -104,7 +106,7 @@ const MettaWorks = () => {
                       <p className="text-muted-foreground mb-3">
                         Work with a coach to:
                       </p>
-                      <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                      <ul className="text-muted-foreground space-y-1 text-sm md:ml-4">
                         <li>
                           • Set personal goals (housing, employment, education,
                           relationships)
@@ -210,7 +212,7 @@ const MettaWorks = () => {
                       <h3 className="mb-3 text-xl font-semibold">
                         Community Resources & Support
                       </h3>
-                      <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                      <ul className="text-muted-foreground space-y-1 text-sm md:ml-4">
                         <li>
                           • Connection to housing assistance, job placement
                           programs, educational opportunities
@@ -236,7 +238,27 @@ const MettaWorks = () => {
           <h2 className="mb-8 text-center text-3xl font-bold md:text-4xl">
             Format & Cost
           </h2>
-
+          <div className="mb-6 flex flex-wrap justify-center gap-6">
+            {[
+              { name: "Medicaid", imagePath: "/ahcccs_logo.jpg" },
+              {
+                name: "Blue Cross Blue Shield",
+                imagePath: "/bcbs_logo.svg",
+              },
+              { name: "Aetna", imagePath: "/aetna_logo.svg" },
+              { name: "Cigna", imagePath: "/cigna_logo.svg" },
+              { name: "Evernorth", imagePath: "/evernorth_logo.svg" },
+            ].map((insurance) => (
+              <Image
+                key={insurance.name}
+                alt={insurance.name}
+                src={insurance.imagePath}
+                height={40}
+                width={100}
+                className="h-10 w-25"
+              />
+            ))}
+          </div>
           <div className="grid gap-6 md:grid-cols-2">
             <Card>
               <CardContent className="pt-6">

@@ -1,12 +1,13 @@
 import CTAButtons from "@components/CTAButtons";
 import { Card, CardContent } from "@components/ui/card";
 import { BookOpen, Users, Heart, Home } from "lucide-react";
+import Image from "next/image";
 
 const FamilyPlaybook = () => {
   return (
     <div className="bg-gradient-calm min-h-screen">
       {/* Hero */}
-      <section className="bg-primary relative overflow-hidden text-white">
+      <section className="bg-primary relative overflow-hidden bg-[url('/happy-family.png')] bg-position-[right_25%_bottom_30%] text-white bg-blend-color-burn md:bg-cover md:bg-center">
         <div className="container mx-auto px-4 py-20 lg:py-24">
           <div className="mx-auto max-w-4xl space-y-6 text-center">
             <h1 className="text-4xl leading-tight font-bold md:text-5xl lg:text-6xl">
@@ -174,6 +175,27 @@ const FamilyPlaybook = () => {
           <h2 className="mb-8 text-center text-3xl font-bold md:text-4xl">
             Insurance & Cost
           </h2>
+          <div className="mb-6 flex flex-wrap justify-center gap-6">
+            {[
+              { name: "Medicaid", imagePath: "/ahcccs_logo.jpg" },
+              {
+                name: "Blue Cross Blue Shield",
+                imagePath: "/bcbs_logo.svg",
+              },
+              { name: "Aetna", imagePath: "/aetna_logo.svg" },
+              { name: "Cigna", imagePath: "/cigna_logo.svg" },
+              { name: "Evernorth", imagePath: "/evernorth_logo.svg" },
+            ].map((insurance) => (
+              <Image
+                key={insurance.name}
+                alt={insurance.name}
+                src={insurance.imagePath}
+                height={40}
+                width={100}
+                className="h-10 w-25"
+              />
+            ))}
+          </div>
 
           <div className="grid gap-6 md:grid-cols-2">
             <Card>
@@ -184,7 +206,7 @@ const FamilyPlaybook = () => {
                     "Typically covered by insurance (we bill under the child's policy for children under 18)."
                   }
                 </p>
-                <div className="flex flex-wrap gap-2">
+                {/* <div className="flex flex-wrap gap-2">
                   {[
                     "Medicaid",
                     "Blue Cross Blue Shield",
@@ -199,7 +221,7 @@ const FamilyPlaybook = () => {
                       {ins}
                     </span>
                   ))}
-                </div>
+                </div> */}
               </CardContent>
             </Card>
 
