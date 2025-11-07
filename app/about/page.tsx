@@ -3,7 +3,7 @@ import MettaHelpImage from "@/public/metta-vibes-is-here-to-help.jpg";
 
 export default function page() {
   return (
-    <div className="flex flex-col">
+    <div className="flex overflow-x-hidden flex-col">
       <main className="flex-1">
         {/* <section className="px-4 py-20">
           <div className="container mx-auto max-w-4xl">
@@ -19,8 +19,8 @@ export default function page() {
             </div>
           </div>
         </section> */}
-        <section className="font-jakarta mx-5 my-10 flex flex-col-reverse gap-10 text-base text-black/85 md:flex-row">
-          <div className="h-full md:ml-15 md:w-[50%]">
+        <section className="font-jakarta mx-5 mt-10 flex flex-col-reverse gap-10 text-base text-black/85 md:flex-row">
+          <div className="h-full text-justify md:ml-15 md:w-[50%]">
             <h1 className="hidden pb-10 text-5xl font-bold text-black md:block">
               Our Story & Commitment
             </h1>
@@ -127,12 +127,12 @@ export default function page() {
               // layout=""
               // layout="fill"
               // objectFit="cover"
-              className="h-full w-full flex-1 rounded-t-full"
+              className="h-full md:pb-5 w-full flex-1 rounded-t-full"
               alt="Metta Vibes is here to help"
               // fill
             />
           </div>
-          <h1 className="pb-10 text-6xl font-bold text-black md:hidden ">
+          <h1 className="pb-10 w-full text-wrap text-5xl font-bold text-black md:hidden ">
             Our Story & Commitment
           </h1>
         </section>
