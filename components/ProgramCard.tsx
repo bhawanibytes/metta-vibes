@@ -1,5 +1,7 @@
+"use client";
+
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Button } from "@components/ui/button";
 import {
   Card,
   CardContent,
@@ -7,8 +9,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@components/ui/card";
 import { ArrowRight, LucideIcon } from "lucide-react";
+// import { useState } from "react";
 
 interface ProgramCardProps {
   title: string;
@@ -17,6 +20,9 @@ interface ProgramCardProps {
   link: string;
   icon: LucideIcon;
   gradient?: string;
+  bgImageUrl: string;
+  isActive: boolean;
+  onActivate: () => void;
 }
 
 const ProgramCard = ({
@@ -26,31 +32,58 @@ const ProgramCard = ({
   link,
   icon: Icon,
   gradient = "from-primary to-primary-light",
+  bgImageUrl,
+  isActive,
+  onActivate,
 }: ProgramCardProps) => {
   return (
-    <Card className="group bg-primary/10 hover:shadow-glow border-border/90 hover:border-primary/30 flex h-full flex-col transition-all duration-300">
-      <CardHeader>
+    <Card
+      className="group hover:shadow-glow hover:border-primary/30 bg-primary/10 border-border/90 relative flex h-full cursor-pointer flex-col overflow-hidden border transition-all duration-300"
+      onClick={onActivate}
+      onMouseEnter={onActivate}
+      onTouchMove={onActivate}
+    >
+      <div
+        className={`pointer-events-none absolute inset-0 rounded-xl bg-cover bg-center transition-opacity duration-300 ${isActive ? "opacity-100" : "opacity-0"}`}
+        style={{
+          backgroundImage: `linear-gradient(rgba(51, 65, 85, 0.85), rgba(51, 65, 85, 0.85)), url(${bgImageUrl})`,
+        }}
+      />
+
+      <CardHeader className="relative z-10">
         <div
-          className={`h-14 w-14 rounded-xl bg-linear-to-br ${gradient} mb-4 flex items-center justify-center transition-transform duration-300 group-hover:scale-110`}
+          className={`h-14 w-14 rounded-xl bg-linear-to-br ${gradient} mb-4 flex items-center justify-center transition-transform duration-300 ${isActive ? "scale-110" : ""}`}
         >
           <Icon className="h-7 w-7 text-white" />
         </div>
-        <CardTitle className="text-xl">{title}</CardTitle>
-        <CardDescription className="text-foreground/80 font-medium">
+        <CardTitle
+          className={`text-xl transition-colors duration-300 ${isActive ? "text-white" : ""}`}
+        >
+          {title}
+        </CardTitle>
+        <CardDescription
+          className={`text-foreground/80 font-medium transition-colors duration-300 ${isActive ? "text-white/90" : ""}`}
+        >
           {subtitle}
         </CardDescription>
       </CardHeader>
-      <CardContent className="grow">
-        <p className="text-foreground/70 leading-relaxed">{description}</p>
+      <CardContent className="relative z-10 grow">
+        <p
+          className={`text-foreground/70 leading-relaxed transition-colors duration-300 ${isActive ? "text-white/80" : ""}`}
+        >
+          {description}
+        </p>
       </CardContent>
-      <CardFooter>
+      <CardFooter className="relative z-10">
         <Link href={link} className="w-full">
           <Button
             variant="outline"
-            className="group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary w-full transition-all"
+            className={`w-full transition-all ${isActive ? "bg-primary text-primary-foreground border-primary" : ""}`}
           >
             Learn More
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            <ArrowRight
+              className={`ml-2 h-4 w-4 transition-transform ${isActive ? "translate-x-1" : ""}`}
+            />
           </Button>
         </Link>
       </CardFooter>

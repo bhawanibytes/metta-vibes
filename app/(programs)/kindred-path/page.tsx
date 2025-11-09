@@ -1,6 +1,5 @@
 import CTAButtons from "@components/CTAButtons";
 import InsuranceCard from "@components/InsuranceCard";
-
 import { Card, CardContent } from "@components/ui/card";
 import {
   CheckCircle,
@@ -15,7 +14,9 @@ const KindredPath = () => {
   return (
     <div className="bg-gradient-calm min-h-screen">
       {/* Hero */}
-      <section className="bg-primary relative overflow-hidden text-white">
+      <section
+        className={`relative overflow-hidden bg-black/30 bg-[url('/kinder-path-hero.jpg')] bg-size-[220%] bg-center text-white bg-blend-darken md:bg-black/20 md:bg-cover`}
+      >
         <div className="container mx-auto px-4 py-20 lg:py-24">
           <div className="mx-auto max-w-4xl space-y-6 text-center">
             <h1 className="text-4xl leading-tight font-bold md:text-5xl lg:text-6xl">

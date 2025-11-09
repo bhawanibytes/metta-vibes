@@ -10,17 +10,18 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="text-white border-border border-t bg-[#03172d] ">
+    <footer className="border-border border-t bg-[#03172d] text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center space-x-2">
               <Image
-                src={"/metta_vibes_logo.png"}
-                height={60}
-                width={90}
+                src={"/metta_vibes_wordmark_logo.png"}
+                height={120}
+                width={120}
                 alt="Metta Vibes Logo"
+                className="h-full"
                 // className="h-70 w-100"
               />
             </Link>
@@ -105,9 +106,7 @@ const Footer = () => {
               <li className="flex items-start space-x-2">
                 <Mail className="text-primary mt-0.5 h-4 w-4 shrink-0" />
                 <Link href={`mailto:${mailId}`}>
-                  <span className="text-muted">
-                    contact@mettavibes.com
-                  </span>
+                  <span className="text-muted">contact@mettavibes.com</span>
                 </Link>
               </li>
               <li className="flex items-start space-x-2">

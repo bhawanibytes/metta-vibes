@@ -38,10 +38,11 @@ const Navigation = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src={"/metta_vibes_logo.png"}
-              height={100}
-              width={100}
+              src={"/metta_vibes_wordmark_logo.png"}
+              height={120}
+              width={120}
               alt="Metta Vibes Logo"
+              className="h-full w-full"
             />
           </Link>
 

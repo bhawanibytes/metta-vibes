@@ -1,3 +1,4 @@
+"use client";
 import ProgramCard from "@components/ProgramCard";
 import { Button } from "@components/ui/button";
 import { Card, CardContent } from "@components/ui/card";
@@ -10,15 +11,18 @@ import {
   Phone,
   CheckCircle,
   Shield,
+  HelpingHand,
 } from "lucide-react";
 import { googleFormLink, phoneNumber } from "./constants";
 import InsuranceCard from "@components/InsuranceCard";
+import { useState } from "react";
 
 const Index = () => {
+  const [activeCard, setActiveCard] = useState<number | null>(null);
   return (
     <div className="bg-gradient-calm overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[linear-gradient(0deg,rgba(0,13,27,0.7)_0%,rgba(182,67,235,0.2)_100%),url('/hero.jpeg')] bg-position-[right_25%_center] bg-no-repeat pb-10 md:bg-center">
+      <section className="relative overflow-hidden bg-[linear-gradient(0deg,rgba(0,13,27,0.7)_0%,rgba(182,67,235,0.2)_100%),url('/hero.jpeg')] bg-size-[430%] bg-position-[right_25%_center] bg-no-repeat pb-10 md:bg-cover md:bg-center">
         {/* <div className="bg-gradient-hero absolute inset-0 opacity-10"></div> */}
         <div className="relative container px-4 py-20 lg:py-10">
           <div className="max-w-4xl space-y-8 text-center">
@@ -353,7 +357,7 @@ const Index = () => {
       </section>
 
       {/* Our Programs */}
-      <section className="bg-primary-foreground mx-auto px-4 py-20">
+      <section className="bg-[linear-gradient(45deg, rgb(0,13,27)_60%, rgb(182,67,235)_100%)] mx-auto px-4 py-20">
         <div className="mb-12 text-center">
           <h2 className="text-secondary-foreground mb-4 text-3xl font-bold md:text-4xl">
             Our Programs
@@ -371,6 +375,9 @@ const Index = () => {
             link="/kindred-path"
             icon={Heart}
             gradient="from-primary to-primary-light"
+            bgImageUrl="/kinder-path-hero.jpg"
+            isActive={activeCard === 0}
+            onActivate={() => setActiveCard(0)}
           />
 
           <ProgramCard
@@ -380,6 +387,9 @@ const Index = () => {
             link="/metta-cove"
             icon={Users}
             gradient="from-primary to-primary-light"
+            bgImageUrl="/kinder-path-hero.jpg"
+            isActive={activeCard === 1}
+            onActivate={() => setActiveCard(1)}
           />
 
           <ProgramCard
@@ -389,6 +399,9 @@ const Index = () => {
             link="/grief"
             icon={Heart}
             gradient="from-primary to-primary-light"
+            bgImageUrl="/family-playbook-hero.jpg"
+            isActive={activeCard === 2}
+            onActivate={() => setActiveCard(2)}
           />
 
           <ProgramCard
@@ -398,6 +411,9 @@ const Index = () => {
             link="/metta-works"
             icon={Briefcase}
             gradient="from-primary to-primary-light"
+            bgImageUrl="/kinder-path-hero.jpg"
+            isActive={activeCard === 3}
+            onActivate={() => setActiveCard(3)}
           />
 
           <ProgramCard
@@ -407,6 +423,20 @@ const Index = () => {
             link="/family-playbook"
             icon={BookOpen}
             gradient="from-primary to-primary-light"
+            bgImageUrl="/family-playbook-hero.jpg"
+            isActive={activeCard === 4}
+            onActivate={() => setActiveCard(4)}
+          />
+          <ProgramCard
+            title="Counseling Services"
+            subtitle="Counseling Services for You"
+            description="Personalized counseling to nurture growth and healing. Therapy and guidance to strengthen every child, teen, and family."
+            link="/counseling-services"
+            icon={HelpingHand}
+            gradient="from-primary to-primary-light"
+            bgImageUrl="/family-playbook-hero.jpg"
+            isActive={activeCard === 5}
+            onActivate={() => setActiveCard(5)}
           />
         </div>
       </section>
