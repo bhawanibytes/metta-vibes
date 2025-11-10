@@ -387,7 +387,7 @@ const Index = () => {
             link="/metta-cove"
             icon={Users}
             gradient="from-primary to-primary-light"
-            bgImageUrl="/kinder-path-hero.jpg"
+            bgImageUrl="/metta-cove.jpg"
             isActive={activeCard === 1}
             onActivate={() => setActiveCard(1)}
           />
@@ -411,7 +411,7 @@ const Index = () => {
             link="/metta-works"
             icon={Briefcase}
             gradient="from-primary to-primary-light"
-            bgImageUrl="/kinder-path-hero.jpg"
+            bgImageUrl="/metta-works.jpg"
             isActive={activeCard === 3}
             onActivate={() => setActiveCard(3)}
           />

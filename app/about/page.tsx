@@ -1,6 +1,6 @@
 //about done
 import Image from "next/image";
-import FounderOfMettaVibes from "@/public/founder-of-metta-vibes.jpg";
+import FounderOfMettaVibes from "@/public/founder-of-metta-vibes-cher.png"
 
 export default function page() {
   return (

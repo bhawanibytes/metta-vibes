@@ -16,7 +16,7 @@ const MettaWorks = () => {
   return (
     <div className="bg-gradient-calm min-h-screen">
       {/* Hero */}
-      <section className="bg-primary relative overflow-hidden text-white">
+      <section className="relative overflow-hidden bg-black/20 bg-[url('/metta-works.jpg')] bg-size-[200%] bg-position-[center_top_65%] text-white bg-blend-overlay md:bg-cover md:bg-position-[center_top_55%]">
         <div className="container mx-auto px-4 py-20 lg:py-24">
           <div className="mx-auto max-w-4xl space-y-6 text-center">
             <h1 className="text-4xl leading-tight font-bold md:text-5xl lg:text-6xl">
