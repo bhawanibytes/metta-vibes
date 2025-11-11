@@ -56,9 +56,7 @@ export default function page() {
                 How We Started: A Commitment Forged in Resilience
               </h6>
               <p className="mb-2">
-                The story of
-                {/* <span className="font-bold">Metta Vibes</span> */}
-                Metta Vibes is not just a business origin—it is a deeply
+                The story of Metta Vibes is not just a business origin—it is a deeply
                 personal testament to{" "}
                 {/* <span className="font-bold">resilience</span> */}
                 resilience. Our foundation was birthed from our founder’s own

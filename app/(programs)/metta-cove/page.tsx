@@ -88,7 +88,7 @@ const MettaCove = () => {
             <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
               How does Metta Cove does look like
             </h2>
-            <div className="rounded-2xl bg-black/25 bg-[url('/metta-cove.jpg')] bg-size-[350%] bg-position-[left_48%_top_58%] h-100 md:bg-cover md:bg-center"></div>
+            <div className="h-100 rounded-2xl bg-black/25 bg-[url('/metta-cove.jpg')] bg-cover bg-position-[left_48%_top_58%] md:bg-center"></div>
 
             {/* <div className="mb-12 grid gap-6 md:grid-cols-3">
               <Card>
@@ -397,8 +397,6 @@ const MettaCove = () => {
           </div>
         </div>
       </section>
-
-      
 
       {/* CTA */}
       <section className="container mx-auto px-4 py-20">
