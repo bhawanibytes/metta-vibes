@@ -82,6 +82,120 @@ const MettaCove = () => {
         </div>
       </section>
 
+      <section className="bg-muted/30 py-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-4xl">
+            <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
+              How does Metta Cove does look like
+            </h2>
+            <div className="rounded-2xl bg-black/25 bg-[url('/metta-cove.jpg')] bg-size-[350%] bg-position-[left_48%_top_58%] h-100 md:bg-cover md:bg-center"></div>
+
+            {/* <div className="mb-12 grid gap-6 md:grid-cols-3">
+              <Card>
+                <CardContent className="pt-6 text-center">
+                  <Users className="text-secondary mx-auto mb-4 h-12 w-12" />
+                  <h3 className="mb-2 text-lg font-semibold">
+                    Small, Safe Groups
+                  </h3>
+                  <p className="text-muted-foreground mb-3 text-sm">
+                    Maximum 6 children per group
+                  </p>
+                  <div className="text-muted-foreground space-y-1 text-xs">
+                    <p>Ages 8-11: Elementary/middle</p>
+                    <p>Ages 12-14: Middle school</p>
+                    <p>Ages 15-17: High school/teen</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6 text-center">
+                  <BookOpen className="text-secondary mx-auto mb-4 h-12 w-12" />
+                  <h3 className="mb-2 text-lg font-semibold">
+                    Evidence-Based Care
+                  </h3>
+                  <p className="text-muted-foreground text-sm">
+                    TF-CBT, Play Therapy, Art Therapy, DBT Skills,
+                    Attachment-Based Therapy
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6 text-center">
+                  <Palette className="text-secondary mx-auto mb-4 h-12 w-12" />
+                  <h3 className="mb-2 text-lg font-semibold">
+                    9-15 Hours/Week
+                  </h3>
+                  <p className="text-muted-foreground text-sm">
+                    Comprehensive programming with expressive arts and play
+                    therapy
+                  </p>
+                </CardContent>
+              </Card>
+            </div> */}
+
+            {/* Programming Details */}
+            {/* <div className="space-y-6">
+              <Card>
+                <CardContent className="pt-6">
+                  <h3 className="mb-3 text-lg font-semibold">
+                    Group Therapy Sessions (Daily)
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {`
+                    Process complex emotions in a supportive peer environment,
+                    learn they're not alone, build connection with others who
+                    "get it."
+                  `}
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <h3 className="mb-3 text-lg font-semibold">
+                    Individual Counseling (2-3x/week)
+                  </h3>
+                  <p className="text-muted-foreground">
+                    One-on-one sessions with clinical staff, address specific
+                    trauma experiences privately, work on personal goals at
+                    their own pace.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <h3 className="mb-3 text-lg font-semibold">
+                    Expressive Arts & Play Therapy
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {`
+                    Art, music, movement, and play as healing tools. Safe ways
+                    to express what words can't capture.
+                  `}
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <h3 className="mb-3 text-lg font-semibold">
+                    Family Integration Sessions (Weekly)
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Joint sessions with parents/caregivers when appropriate.
+                    Help families heal together, teach trauma-informed parenting
+                    strategies.
+                  </p>
+                </CardContent>
+              </Card>
+            </div> */}
+          </div>
+        </div>
+      </section>
+
       {/* What Makes Us Different */}
       <section className="bg-muted/30 py-20">
         <div className="container mx-auto px-4">
@@ -242,10 +356,10 @@ const MettaCove = () => {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-8 text-center text-3xl font-bold md:text-4xl">
-              Sample Schedule & Insurance
+              We accept Insurance
             </h2>
 
-            <Card className="mb-8">
+            {/* <Card className="mb-8">
               <CardContent className="pt-6">
                 <h3 className="mb-4 text-lg font-semibold">
                   Program Hours: 9-15 hours per week
@@ -277,12 +391,14 @@ const MettaCove = () => {
                   available (some groups in-person, some virtual).
                 </p>
               </CardContent>
-            </Card>
+            </Card> */}
 
             <InsuranceCard />
           </div>
         </div>
       </section>
+
+      
 
       {/* CTA */}
       <section className="container mx-auto px-4 py-20">

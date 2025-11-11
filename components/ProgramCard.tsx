@@ -46,7 +46,7 @@ const ProgramCard = ({
       <div
         className={`pointer-events-none absolute inset-0 rounded-xl bg-cover bg-center transition-opacity duration-300 ${isActive ? "opacity-100" : "opacity-0"}`}
         style={{
-          backgroundImage: `linear-gradient(rgba(51, 65, 85, 0.85), rgba(51, 65, 85, 0.85)), url(${bgImageUrl})`,
+          backgroundImage: `linear-gradient(rgba(51, 65, 85, 0.7), rgba(51, 65, 85, 0.7)), url(${bgImageUrl})`,
         }}
       />
 

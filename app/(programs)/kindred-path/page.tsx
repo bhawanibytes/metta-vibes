@@ -229,15 +229,15 @@ const KindredPath = () => {
         </div>
       </section>
 
-      {/* Schedule & Insurance */}
+      {/* Insurance */}
       <section className="bg-muted/30 py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-8 text-center text-3xl font-bold md:text-4xl">
-              Sample Schedule & Insurance
+              We accept Insurance
             </h2>
 
-            <Card className="mb-8">
+            {/* <Card className="mb-8">
               <CardContent className="pt-6">
                 <h3 className="mb-4 text-lg font-semibold">
                   Program Hours: 12-20 hours per week
@@ -271,7 +271,7 @@ const KindredPath = () => {
                   available.
                 </p>
               </CardContent>
-            </Card>
+            </Card> */}
 
             <InsuranceCard />
           </div>
