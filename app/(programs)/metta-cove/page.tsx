@@ -85,9 +85,9 @@ const MettaCove = () => {
       <section className="bg-muted/30 py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
+            {/* <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
               How does Metta Cove does look like
-            </h2>
+            </h2> */}
             <div className="h-100 rounded-2xl bg-black/25 bg-[url('/metta-cove.jpg')] bg-cover bg-position-[left_48%_top_58%] md:bg-center"></div>
 
             {/* <div className="mb-12 grid gap-6 md:grid-cols-3">
