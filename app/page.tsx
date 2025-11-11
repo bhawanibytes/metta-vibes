@@ -203,7 +203,7 @@ const Index = () => {
                       ].map((item) => (
                         <li key={item} className="flex items-start space-x-2">
                           <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
-                          <span className="text-muted-foreground">{item}</span>
+                          <span className="text-foreground">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -248,7 +248,7 @@ const Index = () => {
                       ].map((item) => (
                         <li key={item} className="flex items-start space-x-2">
                           <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
-                          <span className="text-muted-foreground">{item}</span>
+                          <span className="text-foreground">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -442,12 +442,12 @@ const Index = () => {
       </section>
 
       {/* Insurance & Contact */}
-      <section className="bg-muted/30 pt-20 pb-40">
+      <section className="bg-muted/30  pb-40">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="mb-6 text-3xl font-bold md:text-4xl">
+            {/* <h2 className="mb-6 text-3xl font-bold md:text-4xl">
               Insurance & How to Enroll
-            </h2>
+            </h2> */}
 
             {/* <Card className="mb-8">
               <CardContent className="pt-6">
