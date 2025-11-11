@@ -21,7 +21,7 @@ export default function page() {
           </div>
         </section> */}
         <section className="mx-5 mt-10 flex flex-col-reverse gap-10 text-lg text-black/85 md:flex-row md:text-base">
-          <div className="h-full text-justify md:ml-15 md:w-[50%]">
+          <div className="h-full text-left md:ml-15 md:w-[50%]">
             <h1 className="hidden pb-10 text-5xl font-bold text-black md:block">
               Our Story & Commitment
             </h1>
