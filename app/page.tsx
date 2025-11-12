@@ -179,7 +179,7 @@ const Index = () => {
               Understanding Intensive Outpatient Treatment
             </p>
 
-            <Card className="bg-primary/5 border-primary/20 mb-8">
+            <Card className="bg-white border-primary/20 mb-8">
               <CardContent className="pt-6">
                 <p className="mb-6 text-lg">
                   Intensive Outpatient Program (IOP) provides{" "}
@@ -223,7 +223,7 @@ const Index = () => {
               Conditions We Treat
             </p>
 
-            <Card className="bg-primary/5 border-primary/20 mb-8">
+            <Card className="bg-white border-primary/20 mb-8">
               <CardContent className="pt-1">
                 <div className="space-y-4">
                   <div>
