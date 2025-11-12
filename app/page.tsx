@@ -357,12 +357,12 @@ const Index = () => {
       </section>
 
       {/* Our Programs */}
-      <section className="bg-[linear-gradient(45deg, rgb(0,13,27)_60%, rgb(182,67,235)_100%)] mx-auto px-4 py-20">
+      <section className="mx-auto bg-[linear-gradient(45deg,rgb(0,12,27)_60%,rgb(36,23,69)_100%)] px-4 py-20">
         <div className="mb-12 text-center">
-          <h2 className="text-secondary-foreground mb-4 text-3xl font-bold md:text-4xl">
+          <h2 className="text-primary-foreground mb-4 text-3xl font-bold md:text-4xl">
             Our Programs
           </h2>
-          <p className="text-foreground text-xl font-normal">
+          <p className="text-[#d6d6d6] text-xl font-normal">
             Specialized support for every stage of healing
           </p>
         </div>
@@ -442,7 +442,7 @@ const Index = () => {
       </section>
 
       {/* Insurance & Contact */}
-      <section className="bg-muted/30  pb-40">
+      <section className="bg-muted/30 pt-10 pb-40">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl text-center">
             {/* <h2 className="mb-6 text-3xl font-bold md:text-4xl">

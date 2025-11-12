@@ -236,7 +236,8 @@ const MettaWorks = () => {
       <section className="container mx-auto px-4 py-20">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-8 text-center text-3xl font-bold md:text-4xl">
-            Format & Cost
+            {/* Format & Cost */}
+            We accept Insurance
           </h2>
           <div className="mb-6 flex flex-wrap justify-center gap-6">
             {[
@@ -259,7 +260,7 @@ const MettaWorks = () => {
               />
             ))}
           </div>
-          <div className="grid gap-6 md:grid-cols-2">
+          {/* <div className="grid gap-6 md:grid-cols-2">
             <Card>
               <CardContent className="pt-6">
                 <h3 className="mb-3 text-lg font-semibold">Format</h3>
@@ -290,7 +291,7 @@ const MettaWorks = () => {
                 </ul>
               </CardContent>
             </Card>
-          </div>
+          </div> */}
         </div>
       </section>
 

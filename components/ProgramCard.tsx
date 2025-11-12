@@ -11,7 +11,6 @@ import {
   CardTitle,
 } from "@components/ui/card";
 import { ArrowRight, LucideIcon } from "lucide-react";
-// import { useState } from "react";
 
 interface ProgramCardProps {
   title: string;
@@ -38,13 +37,13 @@ const ProgramCard = ({
 }: ProgramCardProps) => {
   return (
     <Card
-      className="group hover:shadow-glow hover:border-primary/30 bg-primary/10 border-border/90 relative flex h-full cursor-pointer flex-col overflow-hidden border transition-all duration-300"
+      className="group text-white hover:shadow-glow hover:border-primary/30 bg-[#112b47] border-[#1f548d] relative flex h-full cursor-pointer flex-col overflow-hidden border transition-all duration-300"
       onClick={onActivate}
       onMouseEnter={onActivate}
       onTouchMove={onActivate}
     >
       <div
-        className={`pointer-events-none absolute inset-0 rounded-xl bg-cover bg-center transition-opacity duration-300 ${isActive ? "opacity-100" : "opacity-0"}`}
+        className={`pointer-events-none absolute inset-0 rounded-xl bg-cover bg-center transition-opacity duration-600 ${isActive ? "opacity-100" : "opacity-0"}`}
         style={{
           backgroundImage: `linear-gradient(rgba(51, 65, 85, 0.7), rgba(51, 65, 85, 0.7)), url(${bgImageUrl})`,
         }}
@@ -54,22 +53,22 @@ const ProgramCard = ({
         <div
           className={`h-14 w-14 rounded-xl bg-linear-to-br ${gradient} mb-4 flex items-center justify-center transition-transform duration-300 ${isActive ? "scale-110" : ""}`}
         >
-          <Icon className="h-7 w-7 text-white" />
+          <Icon className="h-7 w-7" />
         </div>
         <CardTitle
-          className={`text-xl transition-colors duration-300 ${isActive ? "text-white" : ""}`}
+          className={`text-xl transition-colors duration-300`}
         >
           {title}
         </CardTitle>
         <CardDescription
-          className={`text-foreground/80 font-medium transition-colors duration-300 ${isActive ? "text-white/90" : ""}`}
+          className={`text-[#e4e3e3] font-medium transition-colors duration-300 `}
         >
           {subtitle}
         </CardDescription>
       </CardHeader>
       <CardContent className="relative z-10 grow">
         <p
-          className={`text-foreground/70 leading-relaxed transition-colors duration-300 ${isActive ? "text-white/80" : ""}`}
+          className={`text-[#e4e3e3] leading-relaxed transition-colors duration-300 `}
         >
           {description}
         </p>
@@ -78,7 +77,7 @@ const ProgramCard = ({
         <Link href={link} className="w-full">
           <Button
             variant="outline"
-            className={`w-full transition-all ${isActive ? "bg-primary text-primary-foreground border-primary" : ""}`}
+            className={`w-full text-black transition-all ${isActive ? "bg-primary text-primary-foreground border-primary" : ""}`}
           >
             Learn More
             <ArrowRight

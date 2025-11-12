@@ -174,7 +174,8 @@ const FamilyPlaybook = () => {
       <section className="container mx-auto px-4 py-20">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-8 text-center text-3xl font-bold md:text-4xl">
-            Insurance & Cost
+            {/* Insurance & Cost */}
+            We accept Insurance
           </h2>
           <div className="mb-6 flex flex-wrap justify-center gap-6">
             {[
@@ -198,7 +199,7 @@ const FamilyPlaybook = () => {
             ))}
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
+          {/* <div className="grid gap-6 md:grid-cols-2">
             <Card>
               <CardContent className="pt-6">
                 <h3 className="mb-3 text-lg font-semibold">Family Therapy</h3>
@@ -207,22 +208,6 @@ const FamilyPlaybook = () => {
                     "Typically covered by insurance (we bill under the child's policy for children under 18)."
                   }
                 </p>
-                {/* <div className="flex flex-wrap gap-2">
-                  {[
-                    "Medicaid",
-                    "Blue Cross Blue Shield",
-                    "Aetna",
-                    "AIHP",
-                    "Cigna",
-                  ].map((ins) => (
-                    <span
-                      key={ins}
-                      className="bg-secondary/10 text-secondary rounded-full px-2 py-1 text-xs"
-                    >
-                      {ins}
-                    </span>
-                  ))}
-                </div> */}
               </CardContent>
             </Card>
 
@@ -234,7 +219,7 @@ const FamilyPlaybook = () => {
                 </p>
               </CardContent>
             </Card>
-          </div>
+          </div> */}
         </div>
       </section>
 
