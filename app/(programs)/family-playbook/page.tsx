@@ -77,7 +77,7 @@ const FamilyPlaybook = () => {
       </section>
 
       {/* Program Options */}
-      <section className="bg-muted/30 py-20">
+      <section className="bg-[linear-gradient(45deg,rgb(0,12,27)_60%,rgb(36,23,69)_100%)] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
@@ -85,7 +85,7 @@ const FamilyPlaybook = () => {
             </h2>
 
             <div className="space-y-6">
-              <Card>
+              <Card className="bg-[#112b47] border-[#1f548d] text-white">
                 <CardContent className="pt-6">
                   <div className="flex items-start space-x-4">
                     <Home className="text-secondary mt-1 h-8 w-8 shrink-0" />
@@ -93,10 +93,10 @@ const FamilyPlaybook = () => {
                       <h3 className="mb-3 text-xl font-semibold">
                         Option 1: Family Therapy
                       </h3>
-                      <p className="text-muted-foreground mb-3">
+                      <p className="text-[#e4e3e3] mb-3">
                         Work with clinical staff as a family to:
                       </p>
-                      <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                      <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                         <li>• Improve communication patterns</li>
                         <li>• Resolve conflicts constructively</li>
                         <li>• Strengthen parent-child relationships</li>
@@ -105,7 +105,7 @@ const FamilyPlaybook = () => {
                           moves)
                         </li>
                       </ul>
-                      <p className="text-muted-foreground mt-3 text-sm">
+                      <p className="text-[#e4e3e3] mt-3 text-sm">
                         <strong>Format:</strong> 60-minute family sessions
                       </p>
                     </div>
@@ -113,7 +113,7 @@ const FamilyPlaybook = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="bg-[#112b47] border-[#1f548d] text-white">
                 <CardContent className="pt-6">
                   <div className="flex items-start space-x-4">
                     <BookOpen className="text-secondary mt-1 h-8 w-8 shrink-0" />
@@ -121,10 +121,10 @@ const FamilyPlaybook = () => {
                       <h3 className="mb-3 text-xl font-semibold">
                         Option 2: Family Skills Workshops
                       </h3>
-                      <p className="text-muted-foreground mb-3">
+                      <p className="text-[#e4e3e3] mb-3">
                         Attend group workshops with other families to learn:
                       </p>
-                      <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                      <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                         <li>• Emotional regulation for kids and parents</li>
                         <li>
                           • Stress management strategies for the whole family
@@ -139,7 +139,7 @@ const FamilyPlaybook = () => {
                         <li>• Screen time and technology boundaries</li>
                         <li>• Navigating big emotions together</li>
                       </ul>
-                      <p className="text-muted-foreground mt-3 text-sm">
+                      <p className="text-[#e4e3e3] mt-3 text-sm">
                         <strong>Format:</strong> 90-minute workshops, 6-session
                         series
                       </p>
@@ -148,7 +148,7 @@ const FamilyPlaybook = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="bg-[#112b47] border-[#1f548d] text-white">
                 <CardContent className="pt-6">
                   <div className="flex items-start space-x-4">
                     <Heart className="text-secondary mt-1 h-8 w-8 shrink-0" />
@@ -156,7 +156,7 @@ const FamilyPlaybook = () => {
                       <h3 className="mb-3 text-xl font-semibold">
                         Option 3: Integrated Family Support
                       </h3>
-                      <p className="text-muted-foreground">
+                      <p className="text-[#e4e3e3]">
                         For families enrolled in The Metta Cove (child IOP),
                         family sessions are built into programming to help the
                         whole family heal together.

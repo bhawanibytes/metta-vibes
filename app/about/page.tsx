@@ -64,9 +64,7 @@ export default function page() {
                 {/* <span className="font-bold">traumatic loss of a child</span> */}
                 traumatic loss of a child. This shattering event defined the
                 meaning of resilience, revealing that the path forward requires
-                more than just survival—it demands
-                {/* <span className="font-bold"> transformation</span> */}
-                transformation.
+                more than just survival—it demands transformation.
               </p>
               <p>
                 In the depths of grief, the founder made a powerful commitment:

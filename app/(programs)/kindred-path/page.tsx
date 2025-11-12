@@ -93,43 +93,43 @@ const KindredPath = () => {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="bg-muted/30 py-20">
+      <section className="bg-[linear-gradient(45deg,rgb(0,12,27)_60%,rgb(36,23,69)_100%)] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
+            <h2 className="mb-12 text-primary-foreground text-center text-3xl font-bold md:text-4xl">
               What Makes The Kindred Path Different
             </h2>
 
             <div className="mb-12 grid gap-6 md:grid-cols-3">
-              <Card>
+              <Card className="bg-[#112b47] border-[#1f548d] text-white">
                 <CardContent className="pt-6 text-center">
                   <Users className="text-primary mx-auto mb-4 h-12 w-12" />
                   <h3 className="mb-2 text-lg font-semibold">Small Cohorts</h3>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-[#e4e3e3] text-sm">
                     Maximum 5 women per cohort. No getting lost in a crowd.
                     Every voice matters.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="bg-[#112b47] border-[#1f548d] text-white">
                 <CardContent className="pt-6 text-center">
                   <Shield className="text-primary mx-auto mb-4 h-12 w-12" />
                   <h3 className="mb-2 text-lg font-semibold">Evidence-Based</h3>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-[#e4e3e3] text-sm">
                     EMDR, DBT, CPT, trauma-focused therapy led by licensed
                     clinicians.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="bg-[#112b47] border-[#1f548d] text-white">
                 <CardContent className="pt-6 text-center">
                   <Clock className="text-primary mx-auto mb-4 h-12 w-12" />
                   <h3 className="mb-2 text-lg font-semibold">
                     12-20 Hours/Week
                   </h3>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-[#e4e3e3] text-sm">
                     Intensive daily support with comprehensive programming.
                   </p>
                 </CardContent>
@@ -138,18 +138,18 @@ const KindredPath = () => {
 
             {/* Programming Details */}
             <div className="space-y-6">
-              <Card>
+              <Card className="bg-[#112b47] border-[#1f548d] text-white">
                 <CardContent className="pt-6">
                   <h3 className="mb-3 text-lg font-semibold">
                     Process Groups (Daily, 3 hours)
                   </h3>
-                  <p className="text-muted-foreground mb-3">
+                  <p className="text-[#e4e3e3] mb-3">
                     {`
                     Share your story, break isolation, and realize: you're not
                     alone, and you're not crazy.
                   `}
                   </p>
-                  <p className="text-muted-foreground text-sm italic">
+                  <p className="text-[#e4e3e3] text-sm italic">
                     Topics: Understanding narcissistic abuse, trauma bonding,
                     identifying patterns, rebuilding self-worth, co-parenting
                     with an abusive ex, setting boundaries
@@ -157,12 +157,12 @@ const KindredPath = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="bg-[#112b47] border-[#1f548d] text-white">
                 <CardContent className="pt-6">
                   <h3 className="mb-3 text-lg font-semibold">
                     Individual Sessions (2-3x per week)
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-[#e4e3e3]">
                     One-on-one work with clinical staff to process your specific
                     trauma privately, work on personal goals, and address issues
                     unique to your situation.
@@ -170,12 +170,12 @@ const KindredPath = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="bg-[#112b47] border-[#1f548d] text-white">
                 <CardContent className="pt-6">
                   <h3 className="mb-3 text-lg font-semibold">
                     Skills Training Groups
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-[#e4e3e3]">
                     Learn practical, life-changing skills: emotional regulation,
                     distress tolerance, boundary setting, self-compassion,
                     communication, and mindfulness.

@@ -197,24 +197,24 @@ const MettaCove = () => {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="bg-muted/30 py-20">
+      <section className="bg-[linear-gradient(45deg,rgb(0,12,27)_60%,rgb(36,23,69)_100%)] py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
+            <h2 className="text-primary-foreground mb-12 text-center text-3xl font-bold md:text-4xl">
               What Makes The Metta Cove Different
             </h2>
 
             <div className="mb-12 grid gap-6 md:grid-cols-3">
-              <Card>
+              <Card className="border-[#1f548d] bg-[#112b47] text-white">
                 <CardContent className="pt-6 text-center">
                   <Users className="text-secondary mx-auto mb-4 h-12 w-12" />
                   <h3 className="mb-2 text-lg font-semibold">
                     Small, Safe Groups
                   </h3>
-                  <p className="text-muted-foreground mb-3 text-sm">
+                  <p className="text-[#e4e3e3] mb-3 text-sm">
                     Maximum 6 children per group
                   </p>
-                  <div className="text-muted-foreground space-y-1 text-xs">
+                  <div className="text-[#e4e3e3] space-y-1 text-xs">
                     <p>Ages 8-11: Elementary/middle</p>
                     <p>Ages 12-14: Middle school</p>
                     <p>Ages 15-17: High school/teen</p>
@@ -222,26 +222,26 @@ const MettaCove = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-[#1f548d] bg-[#112b47] text-white">
                 <CardContent className="pt-6 text-center">
                   <BookOpen className="text-secondary mx-auto mb-4 h-12 w-12" />
                   <h3 className="mb-2 text-lg font-semibold">
                     Evidence-Based Care
                   </h3>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-[#e4e3e3] text-sm">
                     TF-CBT, Play Therapy, Art Therapy, DBT Skills,
                     Attachment-Based Therapy
                   </p>
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-[#1f548d] bg-[#112b47] text-white">
                 <CardContent className="pt-6 text-center">
                   <Palette className="text-secondary mx-auto mb-4 h-12 w-12" />
                   <h3 className="mb-2 text-lg font-semibold">
                     9-15 Hours/Week
                   </h3>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-[#e4e3e3] text-sm">
                     Comprehensive programming with expressive arts and play
                     therapy
                   </p>
@@ -251,12 +251,12 @@ const MettaCove = () => {
 
             {/* Programming Details */}
             <div className="space-y-6">
-              <Card>
+              <Card className="border-[#1f548d] bg-[#112b47] text-white">
                 <CardContent className="pt-6">
                   <h3 className="mb-3 text-lg font-semibold">
                     Group Therapy Sessions (Daily)
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-[#e4e3e3]">
                     {`
                     Process complex emotions in a supportive peer environment,
                     learn they're not alone, build connection with others who
@@ -266,12 +266,12 @@ const MettaCove = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-[#1f548d] bg-[#112b47] text-white">
                 <CardContent className="pt-6">
                   <h3 className="mb-3 text-lg font-semibold">
                     Individual Counseling (2-3x/week)
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-[#e4e3e3]">
                     One-on-one sessions with clinical staff, address specific
                     trauma experiences privately, work on personal goals at
                     their own pace.
@@ -279,12 +279,12 @@ const MettaCove = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-[#1f548d] bg-[#112b47] text-white">
                 <CardContent className="pt-6">
                   <h3 className="mb-3 text-lg font-semibold">
                     Expressive Arts & Play Therapy
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-[#e4e3e3]">
                     {`
                     Art, music, movement, and play as healing tools. Safe ways
                     to express what words can't capture.
@@ -293,12 +293,12 @@ const MettaCove = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-[#1f548d] bg-[#112b47] text-white">
                 <CardContent className="pt-6">
                   <h3 className="mb-3 text-lg font-semibold">
                     Family Integration Sessions (Weekly)
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-[#e4e3e3]">
                     Joint sessions with parents/caregivers when appropriate.
                     Help families heal together, teach trauma-informed parenting
                     strategies.

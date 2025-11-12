@@ -23,7 +23,7 @@ const MettaWorks = () => {
               Metta Works!
             </h1>
             <p className="text-xl opacity-95 md:text-2xl">
-              Life Skills Program for Transitional Age Youth (Ages 13-25)
+              Life Skills Program for Transitional Age Youth (Ages 12-24)
             </p>
             <p className="mx-auto max-w-2xl text-lg opacity-90">
               Ignite confidence and chart your own course!
@@ -43,7 +43,7 @@ const MettaWorks = () => {
             <CardContent className="pt-6">
               <p className="mb-6 text-lg">
                 <strong>Metta Works!</strong> is hands-on coaching and skills
-                training for teens and young adults (ages 13-25) who need
+                training for teens and young adults (ages 12-24) who need
                 support building:
               </p>
 
@@ -73,7 +73,7 @@ const MettaWorks = () => {
                   "Youth aging out of foster care or other systems",
                   "Teens and young adults with trauma histories who need extra support launching into adulthood",
                   "Transitional age youth with mental health challenges navigating independence",
-                  "Anyone 13-25 who wants practical life skills coaching",
+                  "Anyone 12-24 who wants practical life skills coaching",
                 ].map((item) => (
                   <li key={item} className="flex items-start space-x-2">
                     <ArrowRightIcon className="text-secondary mt-0.5 h-5 w-5 shrink-0" />
@@ -87,7 +87,7 @@ const MettaWorks = () => {
       </section>
 
       {/* What's Included */}
-      <section className="bg-muted/30 py-20">
+      <section className="bg-[linear-gradient(45deg,rgb(0,12,27)_60%,rgb(36,23,69)_100%)] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
@@ -95,7 +95,7 @@ const MettaWorks = () => {
             </h2>
 
             <div className="space-y-6">
-              <Card>
+              <Card className="bg-[#112b47] border-[#1f548d] text-white">
                 <CardContent className="pt-6">
                   <div className="flex items-start space-x-4">
                     <Users className="text-primary mt-1 h-8 w-8 shrink-0" />
@@ -103,10 +103,10 @@ const MettaWorks = () => {
                       <h3 className="mb-3 text-xl font-semibold">
                         One-on-One Life Coaching
                       </h3>
-                      <p className="text-muted-foreground mb-3">
+                      <p className="text-[#e4e3e3] mb-3">
                         Work with a coach to:
                       </p>
-                      <ul className="text-muted-foreground space-y-1 text-sm md:ml-4">
+                      <ul className="text-[#e4e3e3] space-y-1 text-sm md:ml-4">
                         <li>
                           • Set personal goals (housing, employment, education,
                           relationships)
@@ -120,7 +120,7 @@ const MettaWorks = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="bg-[#112b47] border-[#1f548d] text-white">
                 <CardContent className="pt-6">
                   <div className="flex items-start space-x-4">
                     <Briefcase className="text-primary mt-1 h-8 w-8 shrink-0" />
@@ -128,7 +128,7 @@ const MettaWorks = () => {
                       <h3 className="mb-3 text-xl font-semibold">
                         Group Skills Training
                       </h3>
-                      <p className="text-muted-foreground mb-3">
+                      <p className="text-[#e4e3e3] mb-3">
                         Learn essential life skills with peers:
                       </p>
 
@@ -140,7 +140,7 @@ const MettaWorks = () => {
                               Financial Literacy
                             </p>
                           </div>
-                          <p className="text-muted-foreground ml-7 text-xs">
+                          <p className="text-[#e4e3e3] ml-7 text-xs">
                             Budgeting, saving, credit, avoiding debt
                           </p>
                         </div>
@@ -150,7 +150,7 @@ const MettaWorks = () => {
                             <Home className="text-secondary h-5 w-5" />
                             <p className="text-sm font-medium">Housing</p>
                           </div>
-                          <p className="text-muted-foreground ml-7 text-xs">
+                          <p className="text-[#e4e3e3] ml-7 text-xs">
                             Finding apartments, leases, tenant rights
                           </p>
                         </div>
@@ -160,7 +160,7 @@ const MettaWorks = () => {
                             <Briefcase className="text-secondary h-5 w-5" />
                             <p className="text-sm font-medium">Employment</p>
                           </div>
-                          <p className="text-muted-foreground ml-7 text-xs">
+                          <p className="text-[#e4e3e3] ml-7 text-xs">
                             Job searching, resumes, interviews
                           </p>
                         </div>
@@ -172,7 +172,7 @@ const MettaWorks = () => {
                               Health & Wellness
                             </p>
                           </div>
-                          <p className="text-muted-foreground ml-7 text-xs">
+                          <p className="text-[#e4e3e3] ml-7 text-xs">
                             Navigating healthcare, mental health
                           </p>
                         </div>
@@ -182,7 +182,7 @@ const MettaWorks = () => {
                             <Users className="text-secondary h-5 w-5" />
                             <p className="text-sm font-medium">Relationships</p>
                           </div>
-                          <p className="text-muted-foreground ml-7 text-xs">
+                          <p className="text-[#e4e3e3] ml-7 text-xs">
                             Communication, boundaries, conflict
                           </p>
                         </div>
@@ -194,7 +194,7 @@ const MettaWorks = () => {
                               Adulting Basics
                             </p>
                           </div>
-                          <p className="text-muted-foreground ml-7 text-xs">
+                          <p className="text-[#e4e3e3] ml-7 text-xs">
                             Cooking, laundry, time management
                           </p>
                         </div>
@@ -204,7 +204,7 @@ const MettaWorks = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="bg-[#112b47] border-[#1f548d] text-white">
                 <CardContent className="pt-6">
                   <div className="flex items-start space-x-4">
                     <Heart className="text-primary mt-1 h-8 w-8 shrink-0" />
@@ -212,7 +212,7 @@ const MettaWorks = () => {
                       <h3 className="mb-3 text-xl font-semibold">
                         Community Resources & Support
                       </h3>
-                      <ul className="text-muted-foreground space-y-1 text-sm md:ml-4">
+                      <ul className="text-[#e4e3e3] space-y-1 text-sm md:ml-4">
                         <li>
                           • Connection to housing assistance, job placement
                           programs, educational opportunities

@@ -112,7 +112,7 @@ const Footer = () => {
               <li className="flex items-start space-x-2">
                 <MapPin className="text-primary mt-0.5 h-4 w-4 shrink-0" />
                 <Link href={addressLink} target="_blank">
-                  <span className="text-muted">Arizona</span>
+                  <span className="text-muted">540 W. Iron Avenue STE 104 Mesa, AZ 85210</span>
                 </Link>
               </li>
             </ul>

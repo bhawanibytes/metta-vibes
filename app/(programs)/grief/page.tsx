@@ -51,15 +51,16 @@ const Grief = () => {
                 The Power of Peer Support: Benefits of Group Participation
               </h2>
               <p className="text-muted-foreground mx-auto max-w-3xl text-lg">
-                When children experience loss, they often feel isolated and
+                {/* When children experience loss, they often feel isolated and
                 alone in their grief. The What the GRIEF?! program brings
                 together young people who share the common experience of loss,
-                creating a supportive community where healing can begin.
+                creating a supportive community where healing can begin. */}
+                {`When children experience loss, they often feel isolated. Our program brings together young people who share the experience of loss, creating a supportive community where healing can begin.`}
               </p>
             </div>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <Card className="shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Users className="h-6 w-6 text-white" />
@@ -70,12 +71,13 @@ const Grief = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    {`Children attending our grief support groups discover they are not alone in their experience. Being surrounded by peers who truly understand what they're going through helps break through the isolation that grief often brings. This connection with others who "get it" provides validation that their feelings are normal and shared by others their age.`}
+                    {/* {`Children attending our grief support groups discover they are not alone in their experience. Being surrounded by peers who truly understand what they're going through helps break through the isolation that grief often brings. This connection with others who "get it" provides validation that their feelings are normal and shared by others their age.`} */}
+                    {`Children discover they're not alone. Being surrounded by peers who understand helps break through isolation.`}
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Shield className="h-6 w-6 text-white" />
@@ -86,18 +88,19 @@ const Grief = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Our groups provide a judgment-free environment where
+                    {/* Our groups provide a judgment-free environment where
                     children can openly express difficult emotions like sadness,
                     anger, confusion, or even guilt. Many grieving children
                     worry about upsetting their surviving family members, making
                     it hard to share their true feelings at home. In group, they
                     find a safe place to be honest about their grief without
-                    fear of burdening others.
+                    fear of burdening others. */}
+                    {`A judgment-free environment to openly express difficult emotions without fear of burdening others.`}
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <MessageCircle className="h-6 w-6 text-white" />
@@ -108,17 +111,18 @@ const Grief = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Children often lack the vocabulary to describe their complex
+                    {/* Children often lack the vocabulary to describe their complex
                     grief experiences. Through facilitated discussions and
                     activities, participants learn age-appropriate ways to name
                     and express their feelings. This emotional literacy becomes
                     a lifelong tool for processing difficult experiences and
-                    communicating their needs.
+                    communicating their needs. */}
+                    {`Learn age-appropriate ways to name and express feelings—a lifelong tool for processing difficult experiences.`}
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Lightbulb className="h-6 w-6 text-white" />
@@ -129,18 +133,19 @@ const Grief = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Group members share coping techniques and learn new
+                    {/* Group members share coping techniques and learn new
                     strategies from both facilitators and peers. Seeing how
                     other children manage their grief provides practical
                     examples and normalizes the variety of ways people grieve.
                     Children discover healthy outlets for their emotions and
                     build a toolkit of coping skills they can use long after the
-                    program ends.
+                    program ends. */}
+                    {`Share techniques and learn strategies from facilitators and peers for managing grief effectively.`}
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Heart className="h-6 w-6 text-white" />
@@ -152,16 +157,15 @@ const Grief = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    {`
-
+                    {/* {`
                      Every child grieves differently, and there's no "right way" to feel. In group, children witness the many faces of grief and learn that their unique experience is valid. Whether they feel sad one moment and happy the next, or experience grief in waves rather than constantly, they see that all of these responses are normal parts of the healing process.
-
-                    `}
+                    `} */}
+                    {`Witness the many faces of grief and learn that every unique experience is valid—there's no "right way" to feel.`}
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <TrendingUp className="h-6 w-6 text-white" />
@@ -172,17 +176,18 @@ const Grief = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Connecting with peers at different stages of their grief
+                    {/* Connecting with peers at different stages of their grief
                     journey allows children to see that healing is possible.
                     Those further along in their process serve as living proof
                     that life can feel better over time, providing hope to those
                     more recently bereaved. This peer modeling builds resilience
-                    and confidence in their ability to navigate their loss.
+                    and confidence in their ability to navigate their loss. */}
+                    {`See peers further along their journey, providing living proof that healing is possible and life can feel better.`}
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Activity className="h-6 w-6 text-white" />
@@ -193,17 +198,18 @@ const Grief = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Research shows that children who receive grief support,
+                    {/* Research shows that children who receive grief support,
                     particularly in peer group settings, experience fewer
                     behavioral problems, improved emotional regulation, and
                     better overall adjustment following loss. Early intervention
                     through group support can prevent more serious mental health
-                    challenges down the road.
+                    challenges down the road. */}
+                    {`Research shows peer group support leads to fewer behavioral problems and better emotional regulation.`}
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Smile className="h-6 w-6 text-white" />
@@ -214,11 +220,12 @@ const Grief = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    The friendships formed in grief groups often extend beyond
+                    {/* The friendships formed in grief groups often extend beyond
                     the program itself. Children develop meaningful connections
                     with others who understand their experience in a unique way,
                     creating a support network they can turn to long after group
-                    sessions end.
+                    sessions end. */}
+                    {`Friendships formed often extend beyond the program, creating a support network for years to come.`}
                   </p>
                 </CardContent>
               </Card>
@@ -227,15 +234,15 @@ const Grief = () => {
         </section>
 
         {/* Warning Signs Section */}
-        <section className="bg-muted/30 px-4 py-16">
+        <section className="bg-[linear-gradient(45deg,rgb(0,12,27)_60%,rgb(36,23,69)_100%)] px-4 py-16">
           <div className="container mx-auto max-w-5xl">
             <div className="mb-12 text-center">
               {/* <AlertCircle className="text-primary mx-auto mb-4 h-12 w-12" /> */}
-              <h2 className="mb-4 text-3xl font-bold md:text-4xl">
+              <h2 className="mb-4 text-3xl text-white font-bold md:text-4xl">
                 Recognizing When a Child Needs Support: Warning Signs of
                 Grief-Related Struggles
               </h2>
-              <p className="text-muted-foreground mx-auto max-w-3xl text-lg">
+              <p className="text-[#e4e3e3] mx-auto max-w-3xl text-lg">
                 Children express grief differently than adults, and their grief
                 often comes in waves rather than following a linear path. While
                 grief itself is a natural response to loss, certain signs may
@@ -247,7 +254,7 @@ const Grief = () => {
             <Accordion type="single" collapsible className="space-y-4">
               <AccordionItem
                 value="emotional"
-                className="bg-card border-border/50 shadow-soft rounded-lg border px-6"
+                className="text-white bg-[#112b47] border-[#1f548d]  shadow-soft rounded-lg border px-6"
               >
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-center gap-3">
@@ -259,10 +266,10 @@ const Grief = () => {
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4 pt-4 pb-6 md:grid md:grid-cols-2">
                   <div>
-                    <h4 className="text-foreground mb-2 font-medium">
+                    <h4 className="text-white mb-2 font-medium">
                       Persistent or Intense Sadness
                     </h4>
-                    <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>{`• Frequent crying or expressions of hopelessness`}</li>
                       <li>{`• Verbalizing "I'll never be happy again" or "nothing matters anymore"`}</li>
                       <li>{`• Inability to find joy in previously enjoyed activities`}</li>
@@ -270,10 +277,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-foreground mb-2 font-medium">
+                    <h4 className="text-white mb-2 font-medium">
                       Heightened Anxiety or Fear
                     </h4>
-                    <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>
                         • Excessive worry about the safety of other loved ones
                       </li>
@@ -289,10 +296,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-foreground mb-2 font-medium">
+                    <h4 className="text-white mb-2 font-medium">
                       Anger and Irritability
                     </h4>
-                    <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>
                         • Frequent outbursts toward family members, peers, or
                         teachers
@@ -303,10 +310,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-foreground mb-2 font-medium">
+                    <h4 className="text-white mb-2 font-medium">
                       Withdrawal and Isolation
                     </h4>
-                    <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>
                         • Pulling away from friends, family, or social
                         activities
@@ -327,7 +334,7 @@ const Grief = () => {
 
               <AccordionItem
                 value="physical"
-                className="bg-card border-border/50 shadow-soft rounded-lg border px-6"
+                className="bg-[#112b47] border-[#1f548d] text-white shadow-soft rounded-lg border px-6"
               >
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-center gap-3">
@@ -339,10 +346,10 @@ const Grief = () => {
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4 pt-4 pb-6 md:grid md:grid-cols-2">
                   <div>
-                    <h4 className="text-foreground mb-2 font-medium">
+                    <h4 className="text-white mb-2 font-medium">
                       Sleep Disturbances
                     </h4>
-                    <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>• Difficulty falling or staying asleep</li>
                       <li>• Nightmares or night terrors</li>
                       <li>• Sleeping significantly more or less than usual</li>
@@ -350,10 +357,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-foreground mb-2 font-medium">
+                    <h4 className="text-white mb-2 font-medium">
                       Changes in Eating Patterns
                     </h4>
-                    <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>• Significant increase or decrease in appetite</li>
                       <li>• Rapid weight loss or gain</li>
                       <li>• Complaints of nausea or stomach problems</li>
@@ -361,10 +368,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-foreground mb-2 font-medium">
+                    <h4 className="text-white mb-2 font-medium">
                       Physical Complaints
                     </h4>
-                    <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>
                         • Frequent headaches or stomachaches without medical
                         cause
@@ -381,7 +388,7 @@ const Grief = () => {
 
               <AccordionItem
                 value="cognitive"
-                className="bg-card border-border/50 shadow-soft rounded-lg border px-6"
+                className="bg-[#112b47] border-[#1f548d] text-white shadow-soft rounded-lg border px-6"
               >
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-center gap-3">
@@ -393,10 +400,10 @@ const Grief = () => {
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4 pt-4 pb-6 md:grid md:grid-cols-2">
                   <div>
-                    <h4 className="text-foreground mb-2 font-medium">
+                    <h4 className="text-white mb-2 font-medium">
                       Difficulty Concentrating
                     </h4>
-                    <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>
                         • Inability to focus on schoolwork or conversations
                       </li>
@@ -406,10 +413,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-foreground mb-2 font-medium">
+                    <h4 className="text-white mb-2 font-medium">
                       Confusion About the Loss
                     </h4>
-                    <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>• Asking repetitive questions about the death</li>
                       <li>
                         • Difficulty understanding the permanence of death
@@ -423,7 +430,7 @@ const Grief = () => {
 
               <AccordionItem
                 value="social"
-                className="bg-card border-border/50 shadow-soft rounded-lg border px-6"
+                className="bg-[#112b47] border-[#1f548d] text-white shadow-soft rounded-lg border px-6"
               >
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-center gap-3">
@@ -435,10 +442,10 @@ const Grief = () => {
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4 pt-4 pb-6 md:grid md:grid-cols-2">
                   <div>
-                    <h4 className="text-foreground mb-2 font-medium">
+                    <h4 className="text-white mb-2 font-medium">
                       Regression to Earlier Stages
                     </h4>
-                    <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>• Baby talk or clingy behavior in older children</li>
                       <li>
                         • Return to outgrown behaviors (thumb-sucking, security
@@ -449,10 +456,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-foreground mb-2 font-medium">
+                    <h4 className="text-white mb-2 font-medium">
                       Risk-Taking Behaviors
                     </h4>
-                    <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>• Reckless behavior or disregard for safety</li>
                       <li>• Substance experimentation or use</li>
                       <li>• Self-harm or talking about self-harm</li>
@@ -460,10 +467,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-foreground mb-2 font-medium">
+                    <h4 className="text-white mb-2 font-medium">
                       Changes in Peer Relationships
                     </h4>
-                    <ul className="text-muted-foreground ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>
                         • Conflict with friends or difficulty maintaining
                         friendships
@@ -478,7 +485,7 @@ const Grief = () => {
 
               <AccordionItem
                 value="critical"
-                className="bg-destructive/5 rounded-lg px-6"
+                className="bg-destructive/30 border-[#1f548d] rounded-lg px-6"
               >
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-center gap-3">
@@ -493,7 +500,7 @@ const Grief = () => {
                     <h4 className="text-destructive mb-2 font-medium">
                       Thoughts of Death or Suicide
                     </h4>
-                    <ul className="text-foreground/80 ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>
                         • Expressing wishes to die or be with the deceased
                       </li>
@@ -509,7 +516,7 @@ const Grief = () => {
                     <h4 className="text-destructive mb-2 font-medium">
                       Prolonged or Complicated Grief
                     </h4>
-                    <ul className="text-foreground/80 ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>{`• Intense grief that doesn't diminish over time (6+ months)`}</li>
                       <li>• Inability to accept the reality of the loss</li>
                       <li>• Persistent feelings of numbness or detachment</li>
@@ -522,7 +529,7 @@ const Grief = () => {
                     <h4 className="text-destructive mb-2 font-medium">
                       Significant Decline in Functioning
                     </h4>
-                    <ul className="text-foreground/80 ml-4 space-y-1 text-sm">
+                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
                       <li>• Unable to perform daily activities or self-care</li>
                       <li>• Complete withdrawal from all social connections</li>
                       <li>

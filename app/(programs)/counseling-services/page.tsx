@@ -336,19 +336,19 @@ export default function page() {
           </section>
 
           {/* Who We Serve Section */}
-          <section className="px-4 py-16">
+          <section className=" bg-[linear-gradient(45deg,rgb(0,12,27)_60%,rgb(36,23,69)_100%)] text-white px-4 py-16">
             <div className="container mx-auto max-w-6xl">
               <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
                 Who We Serve
               </h2>
 
               <div className="grid gap-6 md:grid-cols-2">
-                <Card className="shadow-soft border-border/50">
+                <Card className="bg-[#112b47] border-[#1f548d] shadow-soft text-white">
                   <CardHeader>
                     <CardTitle>Children (Ages 8-12)</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-[#e4e3e3] leading-relaxed">
                       Individual and family counseling for behavioral concerns,
                       anxiety, depression, trauma, grief, social difficulties,
                       and emotional regulation challenges.
@@ -356,12 +356,12 @@ export default function page() {
                   </CardContent>
                 </Card>
 
-                <Card className="shadow-soft border-border/50">
+                <Card className="bg-[#112b47] border-[#1f548d] shadow-soft text-white">
                   <CardHeader>
                     <CardTitle>Adolescents (Ages 13-17)</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-[#e4e3e3] leading-relaxed">
                       Teen-focused therapy addressing identity development, peer
                       relationships, family conflict, school stress, trauma,
                       mood disorders, and life transitions.
@@ -369,12 +369,12 @@ export default function page() {
                   </CardContent>
                 </Card>
 
-                <Card className="shadow-soft border-border/50">
+                <Card className="bg-[#112b47] border-[#1f548d] shadow-soft text-white">
                   <CardHeader>
                     <CardTitle>Young Adults (Ages 18-25)</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-[#e4e3e3] leading-relaxed">
                       Support for launching into independence, managing mental
                       health, navigating relationships, academic or career
                       challenges, and building life skills.
@@ -382,12 +382,12 @@ export default function page() {
                   </CardContent>
                 </Card>
 
-                <Card className="shadow-soft border-border/50">
+                <Card className="bg-[#112b47] border-[#1f548d] shadow-soft text-white">
                   <CardHeader>
                     <CardTitle>Families</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-[#e4e3e3] leading-relaxed">
                       Family therapy to improve communication, resolve
                       conflicts, strengthen relationships, and support healing
                       from shared challenges or trauma.
