@@ -27,7 +27,7 @@ const Index = () => {
         <div className="relative container px-4 py-20 lg:py-10">
           <div className="max-w-4xl space-y-8 text-center">
             <h1 className="text-4xl leading-tight font-bold text-white md:text-5xl lg:text-6xl">
-              Intensive Outpatient Program for{" "}
+              Outpatient and Intensive Outpatient Program for{" "}
               <span className="from-primary to-primary-light bg-linear-to-r bg-clip-text text-transparent">
                 Women & Children
               </span>{" "}

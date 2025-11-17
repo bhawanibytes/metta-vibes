@@ -28,8 +28,8 @@ function InsuranceCard() {
           ))}
         </div>
         <p className="text-muted-foreground mb-4">
-          We handle insurance verification, prior authorization, claims, and
-          billing. Cost should never be a barrier to healing.
+          {`We handle insurance verification, prior authorization, claims, and
+          billing. Cost should never be a barrier to healing. We also offer sliding scale  payment plans and scholarships on a case by case basis because everyone deserves access to compassionate care when it's needed the most.`}
         </p>
       </CardContent>
     </Card>

@@ -29,7 +29,7 @@ const Footer = () => {
               Behavioral Health and Wellness
             </p>
             <p className="text-muted text-sm">
-              Intensive Outpatient Programs for Women & Children Healing from
+              Outpatient and Intensive Outpatient Programs for Women & Children Healing from
               Trauma
             </p>
           </div>

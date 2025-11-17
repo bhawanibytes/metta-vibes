@@ -17,7 +17,7 @@ const MettaCove = () => {
               Intensive Outpatient Program for Children & Teens (Ages 8-17)
             </p>
             <p className="mx-auto max-w-2xl text-lg opacity-90">
-              A safe harbor for young hearts healing from abuse, loss, and
+              A safe harbor for young hearts healing from traumatic event, loss, and
               family trauma.
             </p>
           </div>
@@ -65,7 +65,7 @@ const MettaCove = () => {
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Have experienced or witnessed abuse in their home",
+                  "Have experienced or witnessed a traumatic event.",
                   "Are struggling with anxiety, depression, behavioral issues, or trauma symptoms",
                   "Need more support than traditional weekly therapy can provide",
                   "Are in stable housing (IOP is outpatient—families return home each day)",
@@ -319,7 +319,7 @@ const MettaCove = () => {
             <CardContent className="pt-6">
               <p className="mb-6 text-lg">
                 {`
-                We understand that children who've experienced abuse or
+                We understand that children who've experienced a traumatic event or
                 witnessed harm to loved ones need more than traditional
                 once-a-week therapy.
               `}
