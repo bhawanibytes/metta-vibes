@@ -2,9 +2,12 @@ import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
 import {
   addressLink,
+  addressText,
   developerGithub,
   mailId,
+  mailIdWithFormat,
   phoneNumber,
+  phoneWithDashFormat,
 } from "@app/constants";
 import Image from "next/image";
 
@@ -85,11 +88,11 @@ const Footer = () => {
           <div>
             <h4 className="mb-4 font-semibold">Insurance Accepted</h4>
             <ul className="text-muted space-y-2 text-sm">
-              <li>Medicaid</li>
+              <li>AHCCCS</li>
               <li>Blue Cross Blue Shield</li>
               <li>Aetna</li>
-              <li>AIHP</li>
               <li>Cigna</li>
+              <li>Evernorth</li>
             </ul>
           </div>
 
@@ -100,19 +103,19 @@ const Footer = () => {
               <li className="flex items-start space-x-2">
                 <Phone className="text-primary mt-0.5 h-4 w-4 shrink-0" />
                 <Link href={`tel:${phoneNumber}`}>
-                  <span className="text-muted">{phoneNumber}</span>
+                  <span className="text-muted">{phoneWithDashFormat}</span>
                 </Link>
               </li>
               <li className="flex items-start space-x-2">
                 <Mail className="text-primary mt-0.5 h-4 w-4 shrink-0" />
                 <Link href={`mailto:${mailId}`}>
-                  <span className="text-muted">contact@mettavibes.com</span>
+                  <span className="text-muted">{mailIdWithFormat}</span>
                 </Link>
               </li>
-              <li className="flex items-start space-x-2">
+              <li className="flex items-start space-x-2 max-w-60">
                 <MapPin className="text-primary mt-0.5 h-4 w-4 shrink-0" />
                 <Link href={addressLink} target="_blank">
-                  <span className="text-muted">540 W. Iron Avenue STE 104 Mesa, AZ 85210</span>
+                  <span className="text-muted">{addressText}</span>
                 </Link>
               </li>
             </ul>

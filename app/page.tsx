@@ -418,7 +418,7 @@ const Index = () => {
 
           <ProgramCard
             title="Family Playbook"
-            subtitle="Family Skills Training (OP)"
+            subtitle="OP for Children & Teens (8-17)"
             description="A practical guide for building family resilience. Workshops and therapy to navigate challenges together."
             link="/family-playbook"
             icon={BookOpen}

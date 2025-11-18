@@ -1,6 +1,6 @@
 //about done
 import Image from "next/image";
-import FounderOfMettaVibes from "@/public/founder-of-metta-vibes-cher.png"
+import FounderOfMettaVibes from "@public/founder-of-metta-vibes-cher.png"
 
 export default function page() {
   return (
@@ -32,11 +32,7 @@ export default function page() {
               <p>
                 {/* <span className="font-bold">Metta Vibes</span> */}
                 Metta Vibes is Arizona’s dedicated Behavioral Health and
-                Wellness program, specializing in
-                {/* <span className="font-bold">
-                  building resilient children and families{" "}
-                </span>{" "} */}
-                building resilient children and families by focusing on
+                Wellness program, specializing in building resilient children and families by focusing on
                 emotional strength and well-being for children, teens, and their
                 entire {/* <span className="font-bold">support system</span> */}
                 support system.
@@ -45,10 +41,10 @@ export default function page() {
             <div className="my-5">
               <h6 className="text-2xl font-bold md:text-lg">Our Mission</h6>
               <p>
-                Mission: “Metta Vibes provides compassionate care rooted in
+                Metta Vibes provides compassionate care rooted in
                 loving- kindness—healing hearts, inspiring healthy habits, and
                 uplifting children and families toward greater wellness and
-                joy.”
+                joy.
               </p>
             </div>
             <div className="my-5">

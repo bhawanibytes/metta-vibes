@@ -15,7 +15,7 @@ const FamilyPlaybook = () => {
               Family Playbook: Resilience Edition
             </h1>
             <p className="text-xl opacity-95 md:text-2xl">
-              Family Skills Training
+              OP for Children & Teens (8-17)
             </p>
             <p className="mx-auto max-w-2xl text-lg opacity-90">
               A practical, proactive guide for building family resilience.
