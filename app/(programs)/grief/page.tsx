@@ -60,7 +60,7 @@ const Grief = () => {
             </div>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/50 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Users className="h-6 w-6 text-white" />
@@ -77,7 +77,7 @@ const Grief = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/50 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Shield className="h-6 w-6 text-white" />
@@ -100,7 +100,7 @@ const Grief = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/50 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <MessageCircle className="h-6 w-6 text-white" />
@@ -122,7 +122,7 @@ const Grief = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/50 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Lightbulb className="h-6 w-6 text-white" />
@@ -145,7 +145,7 @@ const Grief = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/50 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Heart className="h-6 w-6 text-white" />
@@ -165,7 +165,7 @@ const Grief = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/50 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <TrendingUp className="h-6 w-6 text-white" />
@@ -187,7 +187,7 @@ const Grief = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/50 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Activity className="h-6 w-6 text-white" />
@@ -209,7 +209,7 @@ const Grief = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-secondary/5 shadow-soft border-border/50 hover:shadow-glow transition-all">
+              <Card className="bg-secondary/50 shadow-soft border-border/50 hover:shadow-glow transition-all">
                 <CardHeader>
                   <div className="from-primary to-primary-light mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br">
                     <Smile className="h-6 w-6 text-white" />
