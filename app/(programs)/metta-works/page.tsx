@@ -32,12 +32,23 @@ const MettaWorks = () => {
         </div>
       </section>
 
+      {/* Program Description */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto text-center space-y-6">
+          <h2 className="text-3xl md:text-4xl font-bold">Welcome To Metta Works!</h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Metta Works! is a program designed by mental health experts and Club Metta specifically for young people aged 12 to 24 who are facing mental health challenges. Our goal is to support you as you embark on a journey towards independence, personal growth, and career development.<br/>
+            We provide a safe and supportive environment where you can prioritize your emotional well-being while gaining practical, real-world skills.
+          </p>
+        </div>
+      </section>
+
       {/* Who We Serve */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 pb-20">
         <div className="mx-auto max-w-4xl">
-          <h2 className="mb-8 text-3xl font-bold md:text-4xl">
+          {/* <h2 className="mb-8 text-3xl font-bold md:text-4xl">
             Who Metta Works! Serves
-          </h2>
+          </h2> */}
 
           <Card className="mb-8">
             <CardContent className="pt-6">
