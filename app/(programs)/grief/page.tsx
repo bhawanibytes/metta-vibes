@@ -485,7 +485,7 @@ const Grief = () => {
 
               <AccordionItem
                 value="critical"
-                className="bg-destructive/15 outline-[#8d1f1f] outline shadow-soft rounded-lg px-6"
+                className="bg-destructive/10 outline-[#8d1f1f] outline shadow-soft rounded-lg px-6"
               >
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-center gap-3">
