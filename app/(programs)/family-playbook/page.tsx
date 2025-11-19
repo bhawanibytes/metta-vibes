@@ -15,7 +15,7 @@ const FamilyPlaybook = () => {
               Family Playbook: Resilience Edition
             </h1>
             <p className="text-xl opacity-95 md:text-2xl">
-              OP for Children & Teens (8-17)
+              Family Skills Training
             </p>
             <p className="mx-auto max-w-2xl text-lg opacity-90">
               A practical, proactive guide for building family resilience.
@@ -61,7 +61,7 @@ const FamilyPlaybook = () => {
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Children ages 5-17",
+                  "Children ages 8-17",
                   "Parents/caregivers committed to learning together",
                   "A desire to be proactive (not just reactive) about family wellness",
                 ].map((item) => (
