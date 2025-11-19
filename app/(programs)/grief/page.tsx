@@ -485,7 +485,7 @@ const Grief = () => {
 
               <AccordionItem
                 value="critical"
-                className="bg-destructive/10 outline-[#8d1f1f] outline shadow-soft rounded-lg px-6"
+                className="bg-white text-black outline-[#8d1f1f] outline shadow-soft rounded-lg px-6"
               >
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-center gap-3">
@@ -500,7 +500,7 @@ const Grief = () => {
                     <h4 className="text-destructive mb-2 font-medium">
                       Thoughts of Death or Suicide
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className=" ml-4 space-y-1 text-sm">
                       <li>
                         • Expressing wishes to die or be with the deceased
                       </li>
@@ -516,7 +516,7 @@ const Grief = () => {
                     <h4 className="text-destructive mb-2 font-medium">
                       Prolonged or Complicated Grief
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className=" ml-4 space-y-1 text-sm">
                       <li>{`• Intense grief that doesn't diminish over time (6+ months)`}</li>
                       <li>• Inability to accept the reality of the loss</li>
                       <li>• Persistent feelings of numbness or detachment</li>
@@ -529,7 +529,7 @@ const Grief = () => {
                     <h4 className="text-destructive mb-2 font-medium">
                       Significant Decline in Functioning
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className=" ml-4 space-y-1 text-sm">
                       <li>• Unable to perform daily activities or self-care</li>
                       <li>• Complete withdrawal from all social connections</li>
                       <li>
