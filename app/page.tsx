@@ -2,6 +2,7 @@
 import ProgramCard from "@components/ProgramCard";
 import { Button } from "@components/ui/button";
 import { Card, CardContent } from "@components/ui/card";
+
 import Link from "next/link";
 import {
   Heart,
@@ -16,8 +17,10 @@ import {
 import { googleFormLink, phoneNumber } from "./constants";
 import InsuranceCard from "@components/InsuranceCard";
 import { useState } from "react";
+import { useFadeInUp } from "@/hooks/useFadeInUp";
 
 const Index = () => {
+  const fadeInRef = useFadeInUp();
   const [activeCard, setActiveCard] = useState<number | null>(null);
   return (
     <div className="bg-gradient-calm overflow-x-hidden">
@@ -367,7 +370,7 @@ const Index = () => {
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div ref={fadeInRef} className="opacity-0 translate-y-5 will-change-transform mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3">
           <ProgramCard
             title="The Kindred Path"
             subtitle="IOP for Adult Women"
