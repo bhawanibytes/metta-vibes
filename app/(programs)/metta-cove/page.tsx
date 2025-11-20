@@ -1,5 +1,11 @@
 import CTAButtons from "@components/CTAButtons";
 import InsuranceCard from "@components/InsuranceCard";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@components/ui/accordion";
 import { Card, CardContent } from "@components/ui/card";
 import { CheckCircle, Heart, Users, Palette, BookOpen } from "lucide-react";
 
@@ -17,9 +23,30 @@ const MettaCove = () => {
               Intensive Outpatient Program for Children & Teens (Ages 8-17)
             </p>
             <p className="mx-auto max-w-2xl text-lg opacity-90">
-              A safe harbor for young hearts healing from traumatic event, loss, and
-              family trauma.
+              A safe harbor for young hearts healing from traumatic event, loss,
+              and family trauma.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Program Description */}
+      <section className="mx-auto px-4 py-16">
+        <div className="mx-auto max-w-4xl space-y-6 text-center">
+          <h2 className="text-3xl font-bold md:text-4xl">
+            Welcome To Metta Cove!
+          </h2>
+          <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
+            {`Metta Cove is a specialized mental health program offered by Metta Vibes, dedicated to supporting children and youth (ages 6–15) who have witnessed domestic violence in their homes. Rooted in our core principle of Metta (loving-kindness), we provide a safe, nurturing, and sheltered space—a true Cove—where healing can begin through a combination of individual and group therapy.`}
+          </p>
+        </div>
+      </section>
+
+      {/* Metta Cove Hero Image  */}
+      <section className="bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-4xl">
+            <div className="h-100 rounded-2xl bg-black/25 bg-[url('/metta-cove.jpg')] bg-cover bg-position-[left_48%_top_58%] md:bg-center"></div>
           </div>
         </div>
       </section>
@@ -82,120 +109,6 @@ const MettaCove = () => {
         </div>
       </section>
 
-      <section className="bg-muted/30 py-20">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-4xl">
-            {/* <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
-              How does Metta Cove does look like
-            </h2> */}
-            <div className="h-100 rounded-2xl bg-black/25 bg-[url('/metta-cove.jpg')] bg-cover bg-position-[left_48%_top_58%] md:bg-center"></div>
-
-            {/* <div className="mb-12 grid gap-6 md:grid-cols-3">
-              <Card>
-                <CardContent className="pt-6 text-center">
-                  <Users className="text-secondary mx-auto mb-4 h-12 w-12" />
-                  <h3 className="mb-2 text-lg font-semibold">
-                    Small, Safe Groups
-                  </h3>
-                  <p className="text-muted-foreground mb-3 text-sm">
-                    Maximum 6 children per group
-                  </p>
-                  <div className="text-muted-foreground space-y-1 text-xs">
-                    <p>Ages 8-11: Elementary/middle</p>
-                    <p>Ages 12-14: Middle school</p>
-                    <p>Ages 15-17: High school/teen</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6 text-center">
-                  <BookOpen className="text-secondary mx-auto mb-4 h-12 w-12" />
-                  <h3 className="mb-2 text-lg font-semibold">
-                    Evidence-Based Care
-                  </h3>
-                  <p className="text-muted-foreground text-sm">
-                    TF-CBT, Play Therapy, Art Therapy, DBT Skills,
-                    Attachment-Based Therapy
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6 text-center">
-                  <Palette className="text-secondary mx-auto mb-4 h-12 w-12" />
-                  <h3 className="mb-2 text-lg font-semibold">
-                    9-15 Hours/Week
-                  </h3>
-                  <p className="text-muted-foreground text-sm">
-                    Comprehensive programming with expressive arts and play
-                    therapy
-                  </p>
-                </CardContent>
-              </Card>
-            </div> */}
-
-            {/* Programming Details */}
-            {/* <div className="space-y-6">
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="mb-3 text-lg font-semibold">
-                    Group Therapy Sessions (Daily)
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {`
-                    Process complex emotions in a supportive peer environment,
-                    learn they're not alone, build connection with others who
-                    "get it."
-                  `}
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="mb-3 text-lg font-semibold">
-                    Individual Counseling (2-3x/week)
-                  </h3>
-                  <p className="text-muted-foreground">
-                    One-on-one sessions with clinical staff, address specific
-                    trauma experiences privately, work on personal goals at
-                    their own pace.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="mb-3 text-lg font-semibold">
-                    Expressive Arts & Play Therapy
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {`
-                    Art, music, movement, and play as healing tools. Safe ways
-                    to express what words can't capture.
-                  `}
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="mb-3 text-lg font-semibold">
-                    Family Integration Sessions (Weekly)
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Joint sessions with parents/caregivers when appropriate.
-                    Help families heal together, teach trauma-informed parenting
-                    strategies.
-                  </p>
-                </CardContent>
-              </Card>
-            </div> */}
-          </div>
-        </div>
-      </section>
-
       {/* What Makes Us Different */}
       <section className="bg-[linear-gradient(45deg,rgb(0,12,27)_60%,rgb(36,23,69)_100%)] py-20">
         <div className="container mx-auto px-4">
@@ -211,10 +124,10 @@ const MettaCove = () => {
                   <h3 className="mb-2 text-lg font-semibold">
                     Small, Safe Groups
                   </h3>
-                  <p className="text-[#e4e3e3] mb-3 text-sm">
+                  <p className="mb-3 text-sm text-[#e4e3e3]">
                     Maximum 6 children per group
                   </p>
-                  <div className="text-[#e4e3e3] space-y-1 text-xs">
+                  <div className="space-y-1 text-xs text-[#e4e3e3]">
                     <p>Ages 8-11: Elementary/middle</p>
                     <p>Ages 12-14: Middle school</p>
                     <p>Ages 15-17: High school/teen</p>
@@ -228,7 +141,7 @@ const MettaCove = () => {
                   <h3 className="mb-2 text-lg font-semibold">
                     Evidence-Based Care
                   </h3>
-                  <p className="text-[#e4e3e3] text-sm">
+                  <p className="text-sm text-[#e4e3e3]">
                     TF-CBT, Play Therapy, Art Therapy, DBT Skills,
                     Attachment-Based Therapy
                   </p>
@@ -241,7 +154,7 @@ const MettaCove = () => {
                   <h3 className="mb-2 text-lg font-semibold">
                     9-15 Hours/Week
                   </h3>
-                  <p className="text-[#e4e3e3] text-sm">
+                  <p className="text-sm text-[#e4e3e3]">
                     Comprehensive programming with expressive arts and play
                     therapy
                   </p>
@@ -311,7 +224,7 @@ const MettaCove = () => {
       </section>
 
       {/* Our Approach */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 pt-20">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-8 text-3xl font-bold md:text-4xl">Our Approach</h2>
 
@@ -395,6 +308,121 @@ const MettaCove = () => {
 
             <InsuranceCard />
           </div>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="bg-[linear-gradient(45deg,rgb(0,12,27)_60%,rgb(36,23,69)_100%)] px-4 py-16 text-base">
+        <div className="container mx-auto max-w-5xl">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-6xl leading-18 font-bold text-white md:text-4xl">
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem
+              value="emotional"
+              className="shadow-soft rounded-lg border border-[#1f548d] bg-[#112b47] px-6 text-white"
+            >
+              <AccordionTrigger className="hover:no-underline">
+                <div className="flex items-center gap-3">
+                  <span className="text-lg font-semibold">
+                    {` What does "witnessing domestic violence" mean in the context of this program?`}
+                  </span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 py-4">
+                <div>
+                  <h4 className="mb-2 text-base font-normal text-white">
+                    It means a child has been exposed to violence or abuse
+                    occurring between adults or caregivers in the home. This
+                    includes seeing physical harm, hearing fighting or threats,
+                    or being aware of emotional abuse and controlling behaviors.
+                  </h4>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem
+              value="physical"
+              className="shadow-soft rounded-lg border border-[#1f548d] bg-[#112b47] px-6 text-white"
+            >
+              <AccordionTrigger className="hover:no-underline">
+                <div className="flex items-center gap-3">
+                  <span className="text-lg font-semibold">
+                    {` Is this program only for children? Do parents/caregivers participate?`}
+                  </span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 py-4">
+                <div>
+                  <h4 className="mb-2 text-base font-normal text-white">
+                    {`Metta Cove is a child-focused therapy group, but a dedicated caregiver component runs parallel to the children’s sessions. Caregivers meet separately to learn about trauma’s impact on children, build peaceful co-regulation skills, and receive support in creating a stable home environment.`}
+                  </h4>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem
+              value="cognitive"
+              className="shadow-soft rounded-lg border border-[#1f548d] bg-[#112b47] px-6 text-white"
+            >
+              <AccordionTrigger className="hover:no-underline">
+                <div className="flex items-center gap-3">
+                  <span className="text-lg font-semibold">
+                    {` Will my child be asked to talk about the specific events they witnessed? `}
+                  </span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 py-4">
+                <div>
+                  <h4 className="mb-2 text-base font-normal text-white">
+                    {`No. The core focus of Metta Cove is on healing and resilience, not retelling traumatic details. We use play therapy, expressive arts, and mindfulness to help children process big feelings and regain a sense of safety.`}
+                  </h4>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem
+              value="social"
+              className="shadow-soft rounded-lg border border-[#1f548d] bg-[#112b47] px-6 text-white"
+            >
+              <AccordionTrigger className="hover:no-underline">
+                <div className="flex items-center gap-3">
+                  <span className="text-lg font-semibold">
+                    {`My child is 14. Will they be grouped with 6-year-olds? `}
+                  </span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 py-4">
+                <div>
+                  <h4 className="mb-2 text-base font-normal text-white">
+                    {`Absolutely not. Serving ages 6–15, Metta Cove groups are carefully segmented by developmental stage to ensure the therapeutic activities and discussions are relevant, engaging, and highly effective for your child’s specific age group.`}
+                  </h4>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem
+              value="critical"
+              className="shadow-soft rounded-lg border border-[#1f548d] bg-[#112b47] px-6 text-white"
+            >
+              <AccordionTrigger className="hover:no-underline">
+                <div className="flex items-center gap-3">
+                  <span className="text-lg font-semibold">
+                    {`Does the program include individual counseling sessions? `}
+                  </span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 py-4">
+                <div>
+                  <h4 className="mb-2 text-base font-normal text-white">
+                    {`Yes. While the core of Metta Cove involves group therapy and caregiver sessions, each child participant is also assigned a trauma-informed counselor for individual counseling sessions. These one-on-one sessions allow the child to address highly personal or specific trauma responses in a private, supportive setting.`}
+                  </h4>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
