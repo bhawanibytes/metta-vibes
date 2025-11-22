@@ -13,52 +13,15 @@ export default function page() {
             <h1 className="text-4xl leading-tight font-bold md:text-5xl lg:text-6xl">
               Counseling Services at Metta Vibes
             </h1>
-            {/* <p className="text-xl opacity-95 md:text-2xl">
-              Family Skills Training
-            </p> */}
             <p className="mx-auto max-w-2xl text-lg opacity-90">
-              Compassionate, Evidence-Based Therapy for Children, Teens, and
-              Families
+              Compassionate, Evidence-Based Therapy for Children, Teens, Women,
+              and Families
             </p>
-            {/* <p className="text-primary-foreground/80 mx-auto max-w-3xl text-lg leading-relaxed">
-                At Metta Vibes, we provide individualized counseling services
-                tailored to meet the unique needs of each child, adolescent, and
-                family. Our trauma-informed approach integrates proven
-                therapeutic modalities to help clients build resilience, develop
-                healthy coping skills, and create lasting positive change.
-              </p> */}
           </div>
         </div>
       </section>
       <div className="bg-background flex min-h-screen flex-col">
-        {/* <Helmet>
-        <title>Counseling Services - Evidence-Based Therapy | Metta Vibes</title>
-        <meta name="description" content="Compassionate, evidence-based counseling for children, teens, and families. Trauma-informed therapy using CBT, DBT, TF-CBT, and ACT approaches." />
-      </Helmet> */}
-
-        {/* <Navigation /> */}
-
         <main className="grow">
-          {/* Hero Section */}
-          {/* <section className="from-primary/5 to-background bg-linear-to-b px-4 py-20">
-            <div className="container mx-auto max-w-4xl text-center">
-              <h1 className="from-primary to-primary-light mb-6 bg-linear-to-r bg-clip-text text-4xl font-bold text-transparent md:text-5xl lg:text-6xl">
-                Counseling Services at Metta Vibes
-              </h1>
-              <p className="text-muted-foreground mb-8 text-xl md:text-2xl">
-                Compassionate, Evidence-Based Therapy for Children, Teens, and
-                Families
-              </p>
-              <p className="text-foreground/80 mx-auto max-w-3xl text-lg leading-relaxed">
-                At Metta Vibes, we provide individualized counseling services
-                tailored to meet the unique needs of each child, adolescent, and
-                family. Our trauma-informed approach integrates proven
-                therapeutic modalities to help clients build resilience, develop
-                healthy coping skills, and create lasting positive change.
-              </p>
-            </div>
-          </section> */}
-
           {/* Our Approach Section */}
           <section className="px-4 py-16">
             <div className="container mx-auto max-w-6xl">
@@ -336,19 +299,19 @@ export default function page() {
           </section>
 
           {/* Who We Serve Section */}
-          <section className=" bg-[linear-gradient(45deg,rgb(0,12,27)_60%,rgb(36,23,69)_100%)] text-white px-4 py-16">
+          <section className="bg-[linear-gradient(45deg,rgb(0,12,27)_60%,rgb(36,23,69)_100%)] px-4 py-16 text-white">
             <div className="container mx-auto max-w-6xl">
               <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
                 Who We Serve
               </h2>
 
               <div className="grid gap-6 md:grid-cols-2">
-                <Card className="bg-[#112b47] border-[#1f548d] shadow-soft text-white">
+                <Card className="shadow-soft border-[#1f548d] bg-[#112b47] text-white">
                   <CardHeader>
                     <CardTitle>Children (Ages 8-12)</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-[#e4e3e3] leading-relaxed">
+                    <p className="leading-relaxed text-[#e4e3e3]">
                       Individual and family counseling for behavioral concerns,
                       anxiety, depression, trauma, grief, social difficulties,
                       and emotional regulation challenges.
@@ -356,12 +319,12 @@ export default function page() {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-[#112b47] border-[#1f548d] shadow-soft text-white">
+                <Card className="shadow-soft border-[#1f548d] bg-[#112b47] text-white">
                   <CardHeader>
                     <CardTitle>Adolescents (Ages 13-17)</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-[#e4e3e3] leading-relaxed">
+                    <p className="leading-relaxed text-[#e4e3e3]">
                       Teen-focused therapy addressing identity development, peer
                       relationships, family conflict, school stress, trauma,
                       mood disorders, and life transitions.
@@ -369,12 +332,12 @@ export default function page() {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-[#112b47] border-[#1f548d] shadow-soft text-white">
+                <Card className="shadow-soft border-[#1f548d] bg-[#112b47] text-white">
                   <CardHeader>
                     <CardTitle>Young Adults (Ages 18-25)</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-[#e4e3e3] leading-relaxed">
+                    <p className="leading-relaxed text-[#e4e3e3]">
                       Support for launching into independence, managing mental
                       health, navigating relationships, academic or career
                       challenges, and building life skills.
@@ -382,12 +345,12 @@ export default function page() {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-[#112b47] border-[#1f548d] shadow-soft text-white">
+                <Card className="shadow-soft border-[#1f548d] bg-[#112b47] text-white">
                   <CardHeader>
                     <CardTitle>Families</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-[#e4e3e3] leading-relaxed">
+                    <p className="leading-relaxed text-[#e4e3e3]">
                       Family therapy to improve communication, resolve
                       conflicts, strengthen relationships, and support healing
                       from shared challenges or trauma.
@@ -470,6 +433,9 @@ export default function page() {
             </div>
           </section>
 
+          {/* Section Divider */}
+          <div className="h-5 w-full bg-linear-to-t from-white to-gray-200" />
+
           {/* CTA Section */}
           <section className="px-4 py-20">
             <div className="container mx-auto max-w-4xl text-center">
@@ -493,13 +459,6 @@ export default function page() {
                     Schedule a Consultation
                   </Button>
                 </Link>
-                {/* <Button
-                    size="lg"
-                    variant="outline"
-                    className="cursor-pointer shadow-soft text-lg"
-                  >
-                    Request Consultation
-                  </Button> */}
               </div>
             </div>
           </section>

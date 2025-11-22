@@ -24,6 +24,51 @@ const FamilyPlaybook = () => {
         </div>
       </section>
 
+      {/* Program Description */}
+      <section className="mx-auto px-4 py-16">
+        <div className="mx-auto max-w-4xl space-y-6 text-center">
+          <h2 className="text-3xl font-bold md:text-4xl">
+            The Family Playbook: Resilience Edition
+          </h2>
+          <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
+            {`Your 6-Week Blueprint for Bouncing Forward.`}
+          </p>
+          <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
+            {`The Family Playbook: Resilience Edition is an intensive, 6-week program that teaches families how to transform crisis into growth—a process we call “bouncing forward”.`}
+          </p>
+          <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
+            {`We provide actionable, clinical skills to ensure your family can face stress and adversity not just as survivors, but as a stronger, more connected unit.`}
+          </p>
+          <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
+            {`Core Pillars of Strength:`}
+          </p>
+          <ul className="text-muted-foreground ml-10 max-w-3xl text-justify text-lg leading-relaxed md:ml-20">
+            <li>
+              • Resilience Mindset: Learn to control your narrative by reframing
+              challenges, setting optimistic goals, and shifting the family from
+              distress to empowerment.
+            </li>
+            <li>
+              • Security & Structure: Establish stability using flexible,
+              non-negotiable routines and rituals. We secure the whole system by
+              building Parental Resilience and connecting to community supports.
+            </li>
+            <li>
+              • Teamwork & Skills: Solve problems together using essential
+              conflict resolution tools: Active Listening and “I-Statements.”
+              Implement effective Family Meetings to tackle any issue as a
+              unified front.
+            </li>
+          </ul>
+          <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
+            {`Enroll today to stop just surviving and start building a legacy of strength.`}
+          </p>
+        </div>
+      </section>
+
+      {/* Section Divider */}
+      <div className="h-5 w-full bg-linear-to-b from-white to-gray-200" />
+
       {/* Who We Serve */}
       <section className="container mx-auto px-4 py-20">
         <div className="mx-auto max-w-4xl">
@@ -77,7 +122,7 @@ const FamilyPlaybook = () => {
       </section>
 
       {/* Program Options */}
-      <section className="bg-[linear-gradient(45deg,rgb(0,12,27)_60%,rgb(36,23,69)_100%)] text-white py-20">
+      <section className="bg-[linear-gradient(45deg,rgb(0,12,27)_60%,rgb(36,23,69)_100%)] py-20 text-white">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
@@ -85,18 +130,18 @@ const FamilyPlaybook = () => {
             </h2>
 
             <div className="space-y-6">
-              <Card className="bg-[#112b47] border-[#1f548d] text-white">
+              <Card className="border-[#1f548d] bg-[#112b47] text-white">
                 <CardContent className="pt-6">
                   <div className="flex items-start space-x-4">
                     <Home className="text-secondary mt-1 h-8 w-8 shrink-0" />
                     <div>
                       <h3 className="mb-3 text-xl font-semibold">
-                        Option 1: Family Therapy
+                        Option 1: Family Therapy In Home or Clinical Sitting
                       </h3>
-                      <p className="text-[#e4e3e3] mb-3">
+                      <p className="mb-3 text-[#e4e3e3]">
                         Work with clinical staff as a family to:
                       </p>
-                      <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                      <ul className="ml-4 space-y-1 text-sm text-[#e4e3e3]">
                         <li>• Improve communication patterns</li>
                         <li>• Resolve conflicts constructively</li>
                         <li>• Strengthen parent-child relationships</li>
@@ -104,16 +149,17 @@ const FamilyPlaybook = () => {
                           • Navigate transitions (divorce, blended families,
                           moves)
                         </li>
+                        <li>{`• Individualized plan that is specific to your family's needs`}</li>
                       </ul>
-                      <p className="text-[#e4e3e3] mt-3 text-sm">
+                      {/* <p className="text-[#e4e3e3] mt-3 text-sm">
                         <strong>Format:</strong> 60-minute family sessions
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="bg-[#112b47] border-[#1f548d] text-white">
+              <Card className="border-[#1f548d] bg-[#112b47] text-white">
                 <CardContent className="pt-6">
                   <div className="flex items-start space-x-4">
                     <BookOpen className="text-secondary mt-1 h-8 w-8 shrink-0" />
@@ -121,10 +167,10 @@ const FamilyPlaybook = () => {
                       <h3 className="mb-3 text-xl font-semibold">
                         Option 2: Family Skills Workshops
                       </h3>
-                      <p className="text-[#e4e3e3] mb-3">
+                      <p className="mb-3 text-[#e4e3e3]">
                         Attend group workshops with other families to learn:
                       </p>
-                      <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                      <ul className="ml-4 space-y-1 text-sm text-[#e4e3e3]">
                         <li>• Emotional regulation for kids and parents</li>
                         <li>
                           • Stress management strategies for the whole family
@@ -139,16 +185,16 @@ const FamilyPlaybook = () => {
                         <li>• Screen time and technology boundaries</li>
                         <li>• Navigating big emotions together</li>
                       </ul>
-                      <p className="text-[#e4e3e3] mt-3 text-sm">
+                      {/* <p className="text-[#e4e3e3] mt-3 text-sm">
                         <strong>Format:</strong> 90-minute workshops, 6-session
                         series
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="bg-[#112b47] border-[#1f548d] text-white">
+              <Card className="border-[#1f548d] bg-[#112b47] text-white">
                 <CardContent className="pt-6">
                   <div className="flex items-start space-x-4">
                     <Heart className="text-secondary mt-1 h-8 w-8 shrink-0" />

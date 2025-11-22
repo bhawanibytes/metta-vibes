@@ -37,19 +37,38 @@ const MettaCove = () => {
             Welcome To Metta Cove!
           </h2>
           <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
-            {`Metta Cove is a specialized mental health program offered by Metta Vibes, dedicated to supporting children and youth (ages 6–15) who have witnessed domestic violence in their homes. Rooted in our core principle of Metta (loving-kindness), we provide a safe, nurturing, and sheltered space—a true Cove—where healing can begin through a combination of individual and group therapy.`}
+            {`Metta Cove is a specialized mental health program offered by Metta Vibes, dedicated to supporting children and youth (ages 6–15) who have witnessed domestic violence or experienced a traumatic event. Rooted in our core principle of Metta (loving-kindness), we provide a safe, nurturing, and sheltered space—a true Cove—where healing can begin through a combination of individual and group therapy.`}
+          </p>
+          <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
+            {`Witnessing violence can make a child’s world feel chaotic and unsafe. The goal of Metta Cove is to help children move from chaos to calmness by building inner stability and emotional strength. We guide participants in developing the powerful coping skills and resilience they need to thrive.`}
+          </p>
+          <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
+            {`We provide therapeutic services led by trauma-informed specialists. Our holistic approach focuses on:`}
+          </p>
+          <ul className="text-muted-foreground ml-10 max-w-3xl text-justify text-lg leading-relaxed md:ml-20">
+            <li>• Safety and Stabilization</li>
+            <li>• Emotional Literacy</li>
+            <li>• Resilience Skills</li>
+            {/* <li>• Navigate transitions (divorce, blended families, moves)</li> */}
+            {/* <li>{`• Individualized plan that is specific to your family's needs`}</li> */}
+          </ul>
+          <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
+            {`At Metta Cove, we believe every child deserves a safe harbor. We are here to support your child as they navigate their emotions and rediscover their own inherent strength.`}
           </p>
         </div>
       </section>
 
       {/* Metta Cove Hero Image  */}
-      <section className="bg-muted/30">
+      <section className="bg-muted/30 mb-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <div className="h-100 rounded-2xl bg-black/25 bg-[url('/metta-cove.jpg')] bg-cover bg-position-[left_48%_top_58%] md:bg-center"></div>
           </div>
         </div>
       </section>
+
+      {/* Section Divider */}
+      <div className="h-5 w-full bg-linear-to-t from-white to-gray-200" />
 
       {/* Who We Serve */}
       <section className="container mx-auto px-4 py-20">
@@ -334,8 +353,7 @@ const MettaCove = () => {
               <AccordionContent className="space-y-4 py-4">
                 <div>
                   <h4 className="mb-2 text-base font-normal text-white">
-                    It means a child has been exposed to violence or abuse
-                    occurring between adults or caregivers in the home. This
+                    It means a child has been exposed to violence or abuse. This
                     includes seeing physical harm, hearing fighting or threats,
                     or being aware of emotional abuse and controlling behaviors.
                   </h4>
@@ -370,7 +388,7 @@ const MettaCove = () => {
               <AccordionTrigger className="hover:no-underline">
                 <div className="flex items-center gap-3">
                   <span className="text-lg font-semibold">
-                    {` Will my child be asked to talk about the specific events they witnessed? `}
+                    {` Will my child be asked to talk about the specific events they witnessed or experienced? `}
                   </span>
                 </div>
               </AccordionTrigger>

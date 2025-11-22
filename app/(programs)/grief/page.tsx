@@ -238,11 +238,11 @@ const Grief = () => {
           <div className="container mx-auto max-w-5xl">
             <div className="mb-12 text-center">
               {/* <AlertCircle className="text-primary mx-auto mb-4 h-12 w-12" /> */}
-              <h2 className="mb-4 text-3xl text-white font-bold md:text-4xl">
+              <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
                 Recognizing When a Child Needs Support: Warning Signs of
                 Grief-Related Struggles
               </h2>
-              <p className="text-[#e4e3e3] mx-auto max-w-3xl text-lg">
+              <p className="mx-auto max-w-3xl text-lg text-[#e4e3e3]">
                 Children express grief differently than adults, and their grief
                 often comes in waves rather than following a linear path. While
                 grief itself is a natural response to loss, certain signs may
@@ -254,7 +254,7 @@ const Grief = () => {
             <Accordion type="single" collapsible className="space-y-4">
               <AccordionItem
                 value="emotional"
-                className="text-white bg-[#112b47] border-[#1f548d]  shadow-soft rounded-lg border px-6"
+                className="shadow-soft rounded-lg border border-[#1f548d] bg-[#112b47] px-6 text-white"
               >
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-center gap-3">
@@ -266,10 +266,10 @@ const Grief = () => {
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4 pt-4 pb-6 md:grid md:grid-cols-2">
                   <div>
-                    <h4 className="text-white mb-2 font-medium">
+                    <h4 className="mb-2 font-medium text-white">
                       Persistent or Intense Sadness
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm text-[#e4e3e3]">
                       <li>{`• Frequent crying or expressions of hopelessness`}</li>
                       <li>{`• Verbalizing "I'll never be happy again" or "nothing matters anymore"`}</li>
                       <li>{`• Inability to find joy in previously enjoyed activities`}</li>
@@ -277,10 +277,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-white mb-2 font-medium">
+                    <h4 className="mb-2 font-medium text-white">
                       Heightened Anxiety or Fear
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm text-[#e4e3e3]">
                       <li>
                         • Excessive worry about the safety of other loved ones
                       </li>
@@ -296,10 +296,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-white mb-2 font-medium">
+                    <h4 className="mb-2 font-medium text-white">
                       Anger and Irritability
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm text-[#e4e3e3]">
                       <li>
                         • Frequent outbursts toward family members, peers, or
                         teachers
@@ -310,10 +310,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-white mb-2 font-medium">
+                    <h4 className="mb-2 font-medium text-white">
                       Withdrawal and Isolation
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm text-[#e4e3e3]">
                       <li>
                         • Pulling away from friends, family, or social
                         activities
@@ -334,7 +334,7 @@ const Grief = () => {
 
               <AccordionItem
                 value="physical"
-                className="bg-[#112b47] border-[#1f548d] text-white shadow-soft rounded-lg border px-6"
+                className="shadow-soft rounded-lg border border-[#1f548d] bg-[#112b47] px-6 text-white"
               >
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-center gap-3">
@@ -346,10 +346,10 @@ const Grief = () => {
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4 pt-4 pb-6 md:grid md:grid-cols-2">
                   <div>
-                    <h4 className="text-white mb-2 font-medium">
+                    <h4 className="mb-2 font-medium text-white">
                       Sleep Disturbances
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm text-[#e4e3e3]">
                       <li>• Difficulty falling or staying asleep</li>
                       <li>• Nightmares or night terrors</li>
                       <li>• Sleeping significantly more or less than usual</li>
@@ -357,10 +357,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-white mb-2 font-medium">
+                    <h4 className="mb-2 font-medium text-white">
                       Changes in Eating Patterns
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm text-[#e4e3e3]">
                       <li>• Significant increase or decrease in appetite</li>
                       <li>• Rapid weight loss or gain</li>
                       <li>• Complaints of nausea or stomach problems</li>
@@ -368,10 +368,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-white mb-2 font-medium">
+                    <h4 className="mb-2 font-medium text-white">
                       Physical Complaints
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm text-[#e4e3e3]">
                       <li>
                         • Frequent headaches or stomachaches without medical
                         cause
@@ -388,7 +388,7 @@ const Grief = () => {
 
               <AccordionItem
                 value="cognitive"
-                className="bg-[#112b47] border-[#1f548d] text-white shadow-soft rounded-lg border px-6"
+                className="shadow-soft rounded-lg border border-[#1f548d] bg-[#112b47] px-6 text-white"
               >
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-center gap-3">
@@ -400,10 +400,10 @@ const Grief = () => {
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4 pt-4 pb-6 md:grid md:grid-cols-2">
                   <div>
-                    <h4 className="text-white mb-2 font-medium">
+                    <h4 className="mb-2 font-medium text-white">
                       Difficulty Concentrating
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm text-[#e4e3e3]">
                       <li>
                         • Inability to focus on schoolwork or conversations
                       </li>
@@ -413,10 +413,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-white mb-2 font-medium">
+                    <h4 className="mb-2 font-medium text-white">
                       Confusion About the Loss
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm text-[#e4e3e3]">
                       <li>• Asking repetitive questions about the death</li>
                       <li>
                         • Difficulty understanding the permanence of death
@@ -430,7 +430,7 @@ const Grief = () => {
 
               <AccordionItem
                 value="social"
-                className="bg-[#112b47] border-[#1f548d] text-white shadow-soft rounded-lg border px-6"
+                className="shadow-soft rounded-lg border border-[#1f548d] bg-[#112b47] px-6 text-white"
               >
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-center gap-3">
@@ -442,10 +442,10 @@ const Grief = () => {
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4 pt-4 pb-6 md:grid md:grid-cols-2">
                   <div>
-                    <h4 className="text-white mb-2 font-medium">
+                    <h4 className="mb-2 font-medium text-white">
                       Regression to Earlier Stages
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm text-[#e4e3e3]">
                       <li>• Baby talk or clingy behavior in older children</li>
                       <li>
                         • Return to outgrown behaviors (thumb-sucking, security
@@ -456,10 +456,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-white mb-2 font-medium">
+                    <h4 className="mb-2 font-medium text-white">
                       Risk-Taking Behaviors
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm text-[#e4e3e3]">
                       <li>• Reckless behavior or disregard for safety</li>
                       <li>• Substance experimentation or use</li>
                       <li>• Self-harm or talking about self-harm</li>
@@ -467,10 +467,10 @@ const Grief = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-white mb-2 font-medium">
+                    <h4 className="mb-2 font-medium text-white">
                       Changes in Peer Relationships
                     </h4>
-                    <ul className="text-[#e4e3e3] ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm text-[#e4e3e3]">
                       <li>
                         • Conflict with friends or difficulty maintaining
                         friendships
@@ -485,7 +485,7 @@ const Grief = () => {
 
               <AccordionItem
                 value="critical"
-                className="bg-white text-black outline-[#8d1f1f] outline shadow-soft rounded-lg px-6"
+                className="shadow-soft rounded-lg bg-white px-6 text-black outline outline-[#8d1f1f]"
               >
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-center gap-3">
@@ -500,7 +500,7 @@ const Grief = () => {
                     <h4 className="text-destructive mb-2 font-medium">
                       Thoughts of Death or Suicide
                     </h4>
-                    <ul className=" ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm">
                       <li>
                         • Expressing wishes to die or be with the deceased
                       </li>
@@ -516,7 +516,7 @@ const Grief = () => {
                     <h4 className="text-destructive mb-2 font-medium">
                       Prolonged or Complicated Grief
                     </h4>
-                    <ul className=" ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm">
                       <li>{`• Intense grief that doesn't diminish over time (6+ months)`}</li>
                       <li>• Inability to accept the reality of the loss</li>
                       <li>• Persistent feelings of numbness or detachment</li>
@@ -529,7 +529,7 @@ const Grief = () => {
                     <h4 className="text-destructive mb-2 font-medium">
                       Significant Decline in Functioning
                     </h4>
-                    <ul className=" ml-4 space-y-1 text-sm">
+                    <ul className="ml-4 space-y-1 text-sm">
                       <li>• Unable to perform daily activities or self-care</li>
                       <li>• Complete withdrawal from all social connections</li>
                       <li>
@@ -613,6 +613,10 @@ const Grief = () => {
             </Card>
           </div>
         </section>
+
+        {/* Section Divider */}
+        <div className="h-5 w-full bg-linear-to-b from-white to-gray-200" />
+
         {/* Insurance & Contact */}
         <section className="bg-muted/30 pt-20">
           <div className="container mx-auto px-4">
