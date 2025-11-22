@@ -30,7 +30,7 @@ const FamilyPlaybook = () => {
           <h2 className="text-3xl font-bold md:text-4xl">
             The Family Playbook: Resilience Edition
           </h2>
-          <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
+          <p className="mx-auto max-w-3xl text-justify text-lg leading-relaxed font-semibold">
             {`Your 6-Week Blueprint for Bouncing Forward.`}
           </p>
           <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
@@ -39,7 +39,7 @@ const FamilyPlaybook = () => {
           <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
             {`We provide actionable, clinical skills to ensure your family can face stress and adversity not just as survivors, but as a stronger, more connected unit.`}
           </p>
-          <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
+          <p className="mx-auto max-w-3xl text-justify text-lg leading-relaxed font-semibold">
             {`Core Pillars of Strength:`}
           </p>
           <ul className="text-muted-foreground ml-10 max-w-3xl text-justify text-lg leading-relaxed md:ml-20">
@@ -60,7 +60,7 @@ const FamilyPlaybook = () => {
               unified front.
             </li>
           </ul>
-          <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
+          <p className="mx-auto max-w-3xl text-justify text-lg leading-relaxed font-semibold">
             {`Enroll today to stop just surviving and start building a legacy of strength.`}
           </p>
         </div>

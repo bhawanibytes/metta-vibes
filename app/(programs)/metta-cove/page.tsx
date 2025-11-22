@@ -40,7 +40,7 @@ const MettaCove = () => {
             {`Metta Cove is a specialized mental health program offered by Metta Vibes, dedicated to supporting children and youth (ages 6–15) who have witnessed domestic violence or experienced a traumatic event. Rooted in our core principle of Metta (loving-kindness), we provide a safe, nurturing, and sheltered space—a true Cove—where healing can begin through a combination of individual and group therapy.`}
           </p>
           <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
-            {`Witnessing violence can make a child’s world feel chaotic and unsafe. The goal of Metta Cove is to help children move from chaos to calmness by building inner stability and emotional strength. We guide participants in developing the powerful coping skills and resilience they need to thrive.`}
+            {`Witnessing violence or experiencing trauma can make a child’s world feel chaotic and unsafe. The goal of Metta Cove is to help children move from chaos to calmness by building inner stability and emotional strength. We guide participants in developing the powerful coping skills and resilience they need to thrive.`}
           </p>
           <p className="text-muted-foreground mx-auto max-w-3xl text-justify text-lg leading-relaxed">
             {`We provide therapeutic services led by trauma-informed specialists. Our holistic approach focuses on:`}
